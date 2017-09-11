@@ -1,3 +1,30 @@
-baseURL = "http://example.org/"
+baseurl = "http://example.org"
+title = "The Agreements Network"
+theme = "dimension"
 languageCode = "en-us"
-title = "My New Hugo Site"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+disableKinds=["RSS"]
+
+[params]
+  title = "The Agreements Network"
+  # description = '<!--[-->Contract management for the networked age.<!--]-->'
+  description = '<!--[-->Contract management for the networked age.<!--]--><br /><br />
+              <!--[-->Give recognizable legal structure to your digital agreements & grow to global scale.<!--]-->'
+  logo = "fa-diamond"
+  copyright = "Monax Industries Limited"
+
+[[params.social]]
+  medium = "twitter"
+  icon = "twitter"
+  link = "https://twitter.com/monaxHQ"
+
+[[params.social]]
+  medium = "facebook"
+  icon = "facebook"
+  link = "https://facebook.com/monaxHQ"
+
+[[params.social]]
+  medium = "github"
+  icon = "github"
+  link = "https://github.com/monax"
