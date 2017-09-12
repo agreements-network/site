@@ -1,7 +1,7 @@
 image: jguyomard/hugo-builder:0.26-extras
 
 variables:
-  BUILD_DIR: "/tmp/build"
+  BUILD_DIR: "build"
   S3_BUCKET: "sites.monax.io"
   SITE_NAME: "agreements.network"
 
@@ -17,8 +17,10 @@ deploy:
   - hugo --destination $BUILD_DIR --baseURL "https://$SITE_NAME"
   - minify -r -o $BUILD_DIR/ $BUILD_DIR/
   - aws s3 sync --delete $BUILD_DIR s3://$S3_BUCKET/$SITE_NAME
-  - ls /tmp/build
+  - ls build
   - ls $BUILD_DIR
   cache:
+    untracked: true
+    key: "$CI_COMMIT_REF_NAME"
     paths:
-    - /tmp/build
+    - build
