@@ -1,18 +1,24 @@
 image: jguyomard/hugo-builder:0.26-extras
 
+variables:
+  BUILD_DIR: "/tmp/build"
+  S3_BUCKET: "sites.monax.io"
+  SITE_NAME: "agreements.network"
+
 before_script:
-- BUILD_DIR="/tmp/build"
-- S3_BUCKET="sites.monax.io"
-- SITE_NAME="agreements.network"
 - apk --update --no-cache add python py-pip
 - pip install --upgrade awscli s3cmd python-magic
 
 deploy:
+  environment:
+    name: production
+    url: https://agreements.network
   script:
-  - aws configure list # tmp
-  - hugo --destination $BUILD_DIR
+  - hugo --destination $BUILD_DIR --baseURL "https://$SITE_NAME"
   - minify -r -o $BUILD_DIR/ $BUILD_DIR/
-  - aws s3 sync $BUILD_DIR s3://$S3_BUCKET/$SITE_NAME
+  - aws s3 sync --delete $BUILD_DIR s3://$S3_BUCKET/$SITE_NAME
+  - ls /tmp/build
+  - ls $BUILD_DIR
   cache:
     paths:
-    - $BUILD_DIR
+    - /tmp/build
