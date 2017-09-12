@@ -7,12 +7,10 @@ variables:
 
 before_script:
 - apk --update --no-cache add python py-pip
-- pip install --upgrade awscli s3cmd python-magic
+- pip install --upgrade awscli
 
-deploy:
-  environment:
-    name: production
-    url: https://agreements.network
+.deploy_template: &deploy_template
+  stage: deploy
   script:
   - hugo --destination $BUILD_DIR --baseURL "https://$SITE_NAME"
   - minify -r -o $BUILD_DIR/ $BUILD_DIR/
@@ -22,3 +20,21 @@ deploy:
     key: "$CI_COMMIT_REF_NAME"
     paths:
     - build
+
+deploy_production:
+  only:
+    - master
+  environment:
+    name: production
+    url: https://agreements.network
+  <<: *deploy_template
+
+deploy_staging:
+  only:
+    - develop
+  environment:
+    name: staging
+    url: https://staging.agreements.network
+  variables:
+    SITE_NAME: "agreements.network"
+  <<: *deploy_template
