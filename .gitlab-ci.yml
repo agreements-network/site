@@ -13,7 +13,7 @@ before_script:
   stage: deploy
   script:
   - hugo --destination $BUILD_DIR --baseURL "https://$SITE_NAME"
-  - minify -r -o $BUILD_DIR/ $BUILD_DIR/
+  #- minify -r -o $BUILD_DIR/ $BUILD_DIR/
   - aws s3 sync $BUILD_DIR s3://$S3_BUCKET/$SITE_NAME --acl public-read --delete
   cache:
     untracked: true
