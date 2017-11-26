@@ -8,7 +8,6 @@ disableKinds=["RSS"]
 
 [params]
   title = "The Agreements Network"
-  # description = '<!--[-->Contract management for the networked age.<!--]-->'
   description = '<!--[-->Contract management for the networked age.<!--]--><br /><br />
               <!--[-->Give recognizable legal structure to your digital agreements & grow to global scale.<!--]-->'
   logo = "fa-diamond"

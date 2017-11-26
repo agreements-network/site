@@ -1,0 +1,12 @@
+**/*.*~
+.DS_Store
+*sublime*
+
+.sass-cache
+node_modules
+
+/build
+/data
+/deploy
+/public
+/static

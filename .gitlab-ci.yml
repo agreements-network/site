@@ -1,25 +1,40 @@
-image: jguyomard/hugo-builder:0.26-extras
+image: jguyomard/hugo-builder:0.31-extras
 
 variables:
   BUILD_DIR: "build"
-  S3_BUCKET: "sites.monax.io"
-  SITE_NAME: "agreements.network"
+  CLOUDSDK_BIN_PATH: "/root/google-cloud-sdk/bin"
+  CLOUDSDK_CORE_DISABLE_PROMPTS: "yes"
+  GCS_BUCKET: "sites.monax.io"
 
 before_script:
-- apk --update --no-cache add python py-pip
-- pip install --upgrade awscli
+- |
+  apk --update --no-cache add bash
+  # [csk] I know, I know, but you try it without.... vvv
+  curl -sSL https://sdk.cloud.google.com | bash &>/dev/null
+  echo $GCS_CLIENT_SECRET > client-secret.json
+  $CLOUDSDK_BIN_PATH/gcloud auth activate-service-account --key-file client-secret.json
+  rm client-secret.json
 
 .deploy_template: &deploy_template
   stage: deploy
   script:
-  - hugo --destination $BUILD_DIR --baseURL "https://$SITE_NAME"
-  #- minify -r -o $BUILD_DIR/ $BUILD_DIR/
-  - aws s3 sync $BUILD_DIR s3://$S3_BUCKET/$SITE_NAME --acl public-read --delete
-  cache:
-    untracked: true
-    key: "$CI_COMMIT_REF_NAME"
-    paths:
-    - build
+  - |
+    hugo \
+      --verbose \
+      --canonifyURLs \
+      --cleanDestinationDir \
+      --forceSyncStatic \
+      --destination=$BUILD_DIR \
+      --baseURL="https://$SITE_NAME"
+    minify \
+      --verbose \
+      --html-keep-document-tags \
+      --recursive \
+      --output \
+      $BUILD_DIR/ $BUILD_DIR/
+    $CLOUDSDK_BIN_PATH/gsutil -m \
+      rsync -r -d \
+      $BUILD_DIR gs://$GCS_BUCKET/$SITE_NAME
 
 deploy_production:
   only:
@@ -27,6 +42,8 @@ deploy_production:
   environment:
     name: production
     url: https://agreements.network
+  variables:
+    SITE_NAME: "agreements.network"
   <<: *deploy_template
 
 deploy_staging:
@@ -36,5 +53,5 @@ deploy_staging:
     name: staging
     url: https://staging.agreements.network
   variables:
-    SITE_NAME: "agreements.network"
+    SITE_NAME: "staging.agreements.network"
   <<: *deploy_template
