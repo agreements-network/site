@@ -5,11 +5,11 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 disableKinds=["RSS"]
+googleAnalytics = "UA-91240938-2"
 
 [params]
   title = "The Agreements Network"
-  description = '<!--[-->Contract management for the networked age.<!--]--><br /><br />
-              <!--[-->Give recognizable legal structure to your digital agreements & grow to global scale.<!--]-->'
+  description = "<!--[-->Contract management for the networked age.<!--]--><br /><br /><!--[-->Give recognizable legal structure to your digital agreements & grow to global scale.<!--]-->"
   logo = "fa-diamond"
   copyright = "Monax Industries Limited"
 
