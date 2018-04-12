@@ -1,0 +1,24 @@
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
+		<div class="gradient"></div>
+		<div class="container">
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
+							<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
+						</div>
+					</div>
+					{{ if .Site.Params.hero.video.enable }}
+					<div class="row watch-video text-center to-animate">
+						<!-- <span>{{ with .Site.Params.hero.video }}{{ . }}{{ end }}</span> -->
+						<span>{{.Site.Params.hero.video.title | markdownify }}</span>
+
+						<a href="{{ .Site.Params.hero.video.url }}" class="popup-vimeo btn-video"><i class="{{ .Site.Params.hero.video.icon | markdownify }}"></i></a>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+		<div class="slant"></div>
+	</section>

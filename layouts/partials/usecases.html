@@ -1,0 +1,83 @@
+	<section id="fh5co-usecases" data-section="usecases">
+		<div class="container container-padding-md">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="center-border" style="margin-bottom: 0;">{{ with .Site.Params.usecases.title }}{{ . | markdownify }}{{ end }}</h2>
+<!-- 					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext">
+							<h3>{{ with .Site.Params.usecases.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div class="row container-padding-sm">
+				<div class="col-md-3 col-md-offset-1 col-sm-6 div-center">
+					<div class="img-container">
+						<div class="img-inner">
+							<img src="images/agreements-network-diagram-05.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 col-sm-6">
+					<h2>Legal Template Producers</h2>
+					<h4>Making money building better legal operations</h4>
+					<p>Active Agreements create a new method for legal services professionals to serve existing clients while building additional revenue streams and smarter networked operations.</p>
+					<p>Using Active Agreements, lawyers can create legally-effective smart contracts to serve their clients better and make more money. The Agreements Network contains the building blocks of automated legal operations. Using the Agreements Network, lawyers can assemble legal prose and workflow “Archetypes” that create, formalize, store and prove client contract rights.</p>
+				</div>
+			</div>
+			<div class="row container-padding-sm">
+				<div class="col-md-7 col-md-offset-1 col-sm-6">
+					<h2>Corporate Governance</h2>
+					<h4>Increasing Margins through Functionality and Reproducability</h4>
+					<p>Corporate governance, the system of rules and processes which control a company, is a significant workstream for lawyers. The beginning of this process is incorporation or organization of a company. Incorporation of a business is one of the most common processes in legal operations, with more than 250,000 new limited liability companies and corporations organizing each quarter in the United States alone. Articles of organization are a necessary dependency for most businesses - the first step to hiring an employee and opening a business bank account, for example.</p>
+					<p>The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance like bylaws, equity, and operations contracts.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 div-center">
+					<div class="img-container">
+						<div class="img-inner">
+							<img src="images/agreements-network-diagram-05.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row container-padding-sm">
+				<div class="col-md-3 col-md-offset-1 col-sm-6 div-center">
+					<div class="img-container">
+						<div class="img-inner">
+							<img src="images/agreements-network-diagram-06.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 col-sm-6">
+					<h2>Equipment Leasing - Fleets</h2>
+					<h4>Facilitating As-A-Service Business Models</h4>
+					<p>In the evolving network economy, devices upgrade and proliferate quickly, meaning less incentive to buy a device and keep it for years and more pay-per-use and leasing models. This corresponds to an increase in deployments of fleets of equipment, for example, solar panels, electric car chargers and robotics like drones.</p>
+					<img src="images/agreements-network-diagram-08.png" alt="">
+				</div>
+			</div>
+			<div class="row container-padding-sm">
+				<div class="col-md-7 col-md-offset-1 col-sm-6">
+					<h2>Content Creators</h2>
+					<h4>Earning Money While Protecting Content Rights</h4>
+					<p>The internet has disrupted traditional media channels and built new ones for users to create and distribute content. These new channels bring with them problems for creators of unique content, for example video producers on platforms like YouTube.</p>
+					<p>These boundless opportunities for content creators attach complex legal challenges. Content creators in network commerce struggle in three main ways: maintaining ownership of their intellectual property (IP), ensuring fair remuneration for their content, and protecting against the prospect of third-party copyright infringement lawsuits. The Agreements Network is a powerful tool to meet these unique challenges.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 div-center">
+					<div class="img-container">
+						<div class="img-inner">
+							<img src="images/agreements-network-diagram-07.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+				{{ range .Site.Params.usecases.item }}
+					<div class="col-md-6 col-sm-6">
+						<i class="icon {{ .icon | markdownify }}"></i>
+						<h3>{{ .title | markdownify }}</h3>
+						<p>{{ .description | markdownify }}</p>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+				{{ end }}
+			</div>
+		</div>
+	</section>

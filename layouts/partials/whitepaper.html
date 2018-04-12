@@ -1,0 +1,38 @@
+	<section id="fh5co-whitepaper" data-section="whitepaper" class="section-color-bg section-top-slant section-bottom-slant">
+		<div class="container container-padding-lg"><!-- 
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class=" center-border">{{ with .Site.Params.whitepaper.title }}{{ . | markdownify }}{{ end }}</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext">
+							<h3>{{ with .Site.Params.whitepaper.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1">
+					<div class="doc-container">
+						<div class="doc-outer">
+							<div class="doc-inner">
+								<!-- <img src="images/AN-Whitepaper-cover.gif" alt=""> -->
+							</div>
+						</div>
+					</div>
+				</div>
+				{{ range .Site.Params.whitepaper.item }}
+					<div class="col-lg-6 col-md-6 container-padding-md">
+						<!-- <i class="icon to-animate-2 {{ .icon | markdownify }}"></i> -->
+						<h3>{{ .title | markdownify }}</h3>
+						<p>{{ .description | markdownify }}</p>
+
+						<button type="button" class="btn btn-primary">Download Whitepaper</button>
+					</div>
+					<div class="clearfix visible-sm-block"></div>
+				{{ end }}
+			</div>
+			<div class="row">
+			
+			</div>
+		</div>
+	</section>
