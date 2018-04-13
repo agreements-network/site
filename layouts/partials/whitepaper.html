@@ -10,29 +10,24 @@
 					</div>
 				</div>
 			</div> -->
-			<div class="row">
-				<div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1">
-					<div class="doc-container">
-						<div class="doc-outer">
-							<div class="doc-inner">
-								<!-- <img src="images/AN-Whitepaper-cover.gif" alt=""> -->
+			{{ range .Site.Params.whitepaper.item }}
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-6 col-xs-6 col-xs-12">
+						<div class="doc-container">
+							<div class="doc-outer">
+								<div class="doc-inner" style="background: url(/images/{{ .docimg }}) center center no-repeat; background-size: cover;">
+									<!-- img set as bg -->
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				{{ range .Site.Params.whitepaper.item }}
-					<div class="col-lg-6 col-md-6 container-padding-md">
-						<!-- <i class="icon to-animate-2 {{ .icon | markdownify }}"></i> -->
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 whitepaper-text-container">
 						<h3>{{ .title | markdownify }}</h3>
 						<p>{{ .description | markdownify }}</p>
-
-						<button type="button" class="btn btn-primary">Download Whitepaper</button>
+						<a class="btn btn-primary" href="{{ .url }}">{{ .button }}</a>
 					</div>
 					<div class="clearfix visible-sm-block"></div>
-				{{ end }}
-			</div>
-			<div class="row">
-			
-			</div>
+				</div>
+			{{ end }}
 		</div>
 	</section>
