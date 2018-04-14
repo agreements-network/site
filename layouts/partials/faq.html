@@ -13,183 +13,45 @@
 				</div>
 			</div>
 
-
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<h2>{{ range .Site.Params.faq.section1 }}{{ .title | markdownify }}{{ end }}</h2>
-				</div>
-				<div class="col-sm-6">
+			{{ range .Site.Data.faq.section }}
+				<div class="row">
 					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section1item }}
-						  {{if (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
+						<li>
+							<h3 class="accordion-section-toggle">{{ .title | markdownify }}</h3>
+							<div class="accordion-section-content">
+								<div class="col-sm-6 row-bottom-padded-sm">
+									<ul>
+										{{ range $i, $p := .item }}
+										  	{{if (modBool $i 2)}}
+												<li>
+													<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
+													<div class="accordion-content">
+														<p>{{ .answer | markdownify }}</p>
+													</div>
+												</li>
+										   	{{end}}
+										 {{end}}
+									</ul>
+								</div>
+								<div class="col-sm-6 row-bottom-padded-sm">
+									<ul>
+										{{ range $i, $p := .item }}
+										  	{{if not (modBool $i 2)}}
+												<li>
+													<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
+													<div class="accordion-content">
+														<p>{{ .answer | markdownify }}</p>
+													</div>
+												</li>
+										   	{{end}}
+										 {{end}}
+									</ul>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</li>
 					</ul>
 				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section1item }}
-						  {{if not (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-			</div>
-
-
-
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<h2>{{ range .Site.Params.faq.section2 }}{{ .title | markdownify }}{{ end }}</h2>
-				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section2item }}
-						  {{if (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section2item }}
-						  {{if not (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-			</div>
-
-
-
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<h2>{{ range .Site.Params.faq.section3 }}{{ .title | markdownify }}{{ end }}</h2>
-				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section3item }}
-						  {{if (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section3item }}
-						  {{if not (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-			</div>
-
-
-
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<h2>{{ range .Site.Params.faq.section4 }}{{ .title | markdownify }}{{ end }}</h2>
-				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section4item }}
-						  {{if (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section4item }}
-						  {{if not (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-			</div>
-
-
-
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<h2>{{ range .Site.Params.faq.section5 }}{{ .title | markdownify }}{{ end }}</h2>
-				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section5item }}
-						  {{if (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-				<div class="col-sm-6">
-					<ul class="accordion">
-						{{ range $i, $p := .Site.Params.faq.section5item }}
-						  {{if not (modBool $i 2)}}
-								<li>
-									<h4 class="accordion-toggle">{{ .question | markdownify }}</h4>
-									<div class="accordion-content">
-										<p>{{ .answer | markdownify }}</p>
-									</div>
-								</li>
-						   {{end}}
-						 {{end}}
-					</ul>
-				</div>
-			</div>
+			{{ end }}
 
 	</section>

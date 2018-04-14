@@ -86,7 +86,7 @@ theme = "elate"
     icon = "icon-rocket"
     # img = ""
 
-  # overview section
+  # Overview section
   [params.overview]
     enable = true
     title = "Overview"
@@ -98,14 +98,12 @@ theme = "elate"
 
     [[params.overview.col2]]
       title = "The Solution"
-      description = "The Agreements Network is built to enable new and more efficient forms of reaching agreement via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services into legal products. It uses state-of-the-art blockchain and smart contracts technologies to provide consumers with . It is the legal layer for the networked world.<br><br>The Network allows users to build, repurpose and operate legal agreements with the click of a few buttons. Network users are stakeholders in the platform, rewarded for their contributions while building their own value-added revenue streams."
+      description = "The Agreements Network is built to enable new and more efficient forms of reaching agreement via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services into legal products. It uses state-of-the-art blockchain and smart contracts technologies to provide consumers with. It's the legal layer for the networked world."
 
 
-  # overview section
+  # Whitepaper section
   [params.whitepaper]
     enable = true
-    title = "Whitepaper"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
     [[params.whitepaper.item]]
       title = "Download Our Whitepaper"
@@ -114,7 +112,7 @@ theme = "elate"
       button = "Download Whitepaper"
       url = "#"
 
-  # overview section
+  # Use Cases section
   [params.usecases]
     enable = true
     title = "Use Cases"
@@ -122,157 +120,64 @@ theme = "elate"
 
 
     [[params.usecases.item]]
-      title = "Legal Template Producers"
-      subtitle = "Making money building better legal operations"
-      description = "<p>Active Agreements create a new method for legal services professionals to serve existing clients while building additional revenue streams and smarter networked operations.</p><p>Using Active Agreements, lawyers can create legally-effective smart contracts to serve their clients better and make more money. The Agreements Network contains the building blocks of automated legal operations. Using the Agreements Network, lawyers can assemble legal prose and workflow “Archetypes” that create, formalize, store and prove client contract rights.</p>"
-      img = "agreements-network-diagram-05.png"
-      alt = "Legal Template Producers"
-
-    [[params.usecases.item]]
       title = "Corporate Governance"
       subtitle = "Increasing Margins through Functionality and Reproducability"
-      description = "<p>Corporate governance, the system of rules and processes which control a company, is a significant workstream for lawyers. The beginning of this process is incorporation or organization of a company. Incorporation of a business is one of the most common processes in legal operations, with more than 250,000 new limited liability companies and corporations organizing each quarter in the United States alone. Articles of organization are a necessary dependency for most businesses - the first step to hiring an employee and opening a business bank account, for example.</p><p>The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance like bylaws, equity, and operations contracts.</p>"
+      description = "<p>Corporate governance, the system of rules and processes which control a company, is a significant workstream for lawyers. The beginning of this process is incorporation or organization of a company. Incorporation of a business is one of the most common processes in legal operations, with more than 250,000 new limited liability companies and corporations organizing each quarter in the United States alone. Articles of organization are a necessary dependency for most businesses - the first step to hiring an employee and opening a business bank account, for example.</p><p>The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance like bylaws, equity, and operations contracts.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
       img = "agreements-network-diagram-05.png"
       alt = "Corporate Governance"
 
     [[params.usecases.item]]
       title = "Equipment Leasing - Fleets"
       subtitle = "Facilitating As-A-Service Business Models"
-      description = "<p>In the evolving network economy, devices upgrade and proliferate quickly, meaning less incentive to buy a device and keep it for years and more pay-per-use and leasing models. This corresponds to an increase in deployments of fleets of equipment, for example, solar panels, electric car chargers and robotics like drones.</p><img src='images/agreements-network-diagram-08.png' alt='Equipment Leasing - Fleets'>"
+      description = "<p>In the evolving network economy, devices upgrade and proliferate quickly, meaning less incentive to buy a device and keep it for years and more pay-per-use and leasing models. This corresponds to an increase in deployments of fleets of equipment, for example, solar panels, electric car chargers and robotics like drones.</p><img src='images/agreements-network-diagram-08.png' alt='Equipment Leasing - Fleets'><p><strong>Extensible fleet leasing Archetypes.</strong> Equipment leases create commercial relationships around the use of an item of property, for example, a drone. Each unit performs a computerized job with a performance history. Unit function history, as well as things like ownership, payments, rights of use, maintenance and insurance may all be parameterized as workflows in the Agreements Network.</p><img src='images/agreements-network-diagram-11.png' alt='Equipment Leasing - Fleets'>"
       img = "agreements-network-diagram-06.png"
       alt = "Equipment Leasing - Fleets"
 
     [[params.usecases.item]]
       title = "Content Creators"
       subtitle = "Earning Money While Protecting Content Rights"
-      description = "<p>The internet has disrupted traditional media channels and built new ones for users to create and distribute content. These new channels bring with them problems for creators of unique content, for example video producers on platforms like YouTube.</p><p>These boundless opportunities for content creators attach complex legal challenges. Content creators in network commerce struggle in three main ways: maintaining ownership of their intellectual property (IP), ensuring fair remuneration for their content, and protecting against the prospect of third-party copyright infringement lawsuits. The Agreements Network is a powerful tool to meet these unique challenges.</p>"
+      description = "<p>The internet has disrupted traditional media channels and built new ones for users to create and distribute content. These new channels bring with them problems for creators of unique content, for example video producers on platforms like YouTube.</p><p>These boundless opportunities for content creators attach complex legal challenges. Content creators in network commerce struggle in three main ways: maintaining ownership of their intellectual property (IP), ensuring fair remuneration for their content, and protecting against the prospect of third-party copyright infringement lawsuits. The Agreements Network is a powerful tool to meet these unique challenges.</p><img src='images/agreements-network-diagram-12.png' alt='Equipment Leasing - Fleets'>"
       img = "agreements-network-diagram-07.png"
       alt = "Content Creators"
 
 
-  # overview section
+    # [[params.usecases.item]]
+    #   title = "Legal Template Producers"
+    #   subtitle = "Making money building better legal operations"
+    #   description = "<p>Active Agreements create a new method for legal services professionals to serve existing clients while building additional revenue streams and smarter networked operations.</p><p>Using Active Agreements, lawyers can create legally-effective smart contracts to serve their clients better and make more money. The Agreements Network contains the building blocks of automated legal operations. Using the Agreements Network, lawyers can assemble legal prose and workflow “Archetypes” that create, formalize, store and prove client contract rights.</p>"
+    #   img = "agreements-network-diagram-05.png"
+    #   alt = "Legal Template Producers"
+
+
+  # FAQ section
   [params.faq]
     enable = true
     title = "FAQ"
     # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
-    [[params.faq.section1]]
-      title = "Basics"
-
-      [[params.faq.section1item]]
-        question = "What is the Agreements Network?"
-        answer = "No text yet"
-
-      [[params.faq.section1item]]
-        question = "Where's your whitepaper?"
-        answer = "No text yet"
-
-      [[params.faq.section1item]]
-        question = "Where's your technical (yellow) paper?"
-        answer = "No text yet"
-
-      [[params.faq.section1item]]
-        question = "Where's your governance (orange) paper?"
-        answer = "No text yet"
-
-    [[params.faq.section2]]
-      title = "Basics of Agreements"
-
-    [[params.faq.section2item]]
-      question = "Why do people want to enter into agreements at all?"
-      answer = "Certainty over whether an agreement was made<br>Clarity between parties about the specifics of what was agreed<br>Benefits/consideration agreed<br>Mechanisms/rules of transaction<br>Greater efficiency in resolving disputes<br>Enforceability - ambient legal structures allow the weak to trust the strong"
-
-    [[params.faq.section2item]]
-      question = "Why do people (or other autonomous entities) stand to gain by entering into an agreement digitally?"
-      answer = "Computable reference object (could drive automation elsewhere)<br>Cryptographic proof of agreement state (by parties timestamping, signing it, ordering it amongst other documents by hash-chaining)<br>Security against loss<br>Interaction with other agreements (e.g. static hierarchical, or dynamic with respect to state change)<br>Updateability or freshness<br>Fulfilment logs and other event streams"
-
-    [[params.faq.section3]]
-      title = "Basics of Network"
-
-    [[params.faq.section3item]]
-      question = "What is the Agreements Network built on?"
-      answer = "No text yet"
-
-    [[params.faq.section3item]]
-      question = "What is Cosmos?"
-      answer = "No text yet"
-
-    [[params.faq.section3item]]
-      question = "Why is the Agreements Network not built on Ethereum?"
-      answer = "No text yet"
-
-    [[params.faq.section3item]]
-      question = "What is the permissioning model of the Agreements Network?"
-      answer = "No text yet"
-
-    [[params.faq.section3item]]
-      question = "How do I become a validator of the Agreements Network?"
-      answer = "No text yet"
-
-
-    [[params.faq.section4]]
-      title = "Basics of the Agreements Network's Protocol"
-
-    [[params.faq.section4item]]
-      question = "I'm a lawyer, how can I make money by using the Agreements Network?"
-      answer = "No text yet"
-
-    [[params.faq.section4item]]
-      question = "I'm a smart contract developer, how can I build things for the Agreements Network?"
-      answer = "No text yet"
-
-    [[params.faq.section4item]]
-      question = "I'm a service provider for various ethereum systems, how can I integrate my services into the Agreements Network?"
-      answer = "No text yet"
-
-
-    [[params.faq.section5]]
-      title = "Token Economics"
-
-    [[params.faq.section5item]]
-      question = "Why do you have a token?"
-      answer = "No text yet"
-
-    [[params.faq.section5item]]
-      question = "What does your token do?"
-      answer = "No text yet"
-
-    [[params.faq.section5item]]
-      question = "When is your ICO?"
-      answer = "No text yet"
-
-    [[params.faq.section5item]]
-      question = "When is your presale?"
-      answer = "No text yet"
-
-    [[params.faq.section5item]]
-      question = "What is the distribution of the token on network launch?"
-      answer = "No text yet"
-
-    [[params.faq.section5item]]
-      question = "What will the price of the token be in 1, 3, 5 years?"
-      answer = "No text yet"
-
-    [[params.faq.section5item]]
-      question = "I'm a US based token purchaser, can I buy your token?"
-      answer = "No text yet"
+    # NOTE: FAQ information is pulled from data/faq.toml
 
   # Contact section
   [params.contact]
     enable = true
     map = false
     form = true
-    title = "Get In Touch"
+    title = "Connect With Us"
     # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    
+
+    subtitle = "Get In Touch"
+
     # Available icons: http://simplelineicons.com/
     details = [
+        ["icon-envelope", "<a href='mailto:contact@monax.io' alt='contact@monax.io'>contact@monax.io</a>"],
         ["icon-home", "44 Malborough Street, London,<br>W1F7JL, United Kingdom"],
         # ["icon-phone", "(123) 465-6789"],
-        ["icon-envelope", "<a href='mailto:contact@monax.io' alt='contact@monax.io'>contact@monax.io</a>"],
-        ["icon-globe", '<a href="/" target="">agreements.network</a>']
+        ["icon-twitter", '<a href="https://twitter.com/monaxhq" target="_blank">twitter.com/monaxhq</a>'],
+        ["icon-facebook", '<a href="https://facebook.com/monaxHQ" target="_blank">facebook.com/monaxhq</a>'],
+        # ["icon-globe", '<a href="/" target="">agreements.network</a>']
       ]
 
+    # Form labels
     fname = "First Name"
     lname = "Last Name"
     email = "Email"

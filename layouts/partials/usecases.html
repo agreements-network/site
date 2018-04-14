@@ -16,7 +16,7 @@
 			{{ range $i, $p := .Site.Params.usecases.item }}
 				<div class="row container-padding-sm">
 					{{if (modBool $i 2)}} <!-- odd row -->
-						<div class="col-md-3 col-md-offset-1 col-xs-4 div-center">
+						<div class="col-md-3 col-md-offset-1 col-sm-4 hidden-xs div-center">
 							{{ if .img }}
 								<div class="img-container">
 									<div class="img-inner">
@@ -25,18 +25,18 @@
 								</div>
 							{{ end }}
 						</div>
-						<div class="col-md-7 col-xs-8">
+						<div class="col-md-7 col-sm-8">
 							<h2>{{ .title | markdownify }}</h2>
 							<h4>{{ .subtitle | markdownify }}</h4>
 							{{ .description | markdownify }}
 						</div>
 					{{ else }} <!-- even row -->
-						<div class="col-md-7 col-md-offset-1 col-xs-8">
+						<div class="col-md-7 col-md-offset-1 col-sm-8">
 							<h2>{{ .title | markdownify }}</h2>
 							<h4>{{ .subtitle | markdownify }}</h4>
 							{{ .description | markdownify }}
 						</div>
-						<div class="col-md-3 col-xs-4 div-center">
+						<div class="col-md-3 col-sm-4 div-center hidden-xs">
 							{{ if .img }}
 								<div class="img-container">
 									<div class="img-inner">

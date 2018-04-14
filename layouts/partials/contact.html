@@ -14,7 +14,7 @@
 			</div>
 			<div class="row row-bottom-padded-md">
 				<div class="col-sm-6 ">
-					<h3>{{ with .Site.Params.contact.info }}{{ . | markdownify }}{{ end }}</h3>
+					<h3 class="content-subheading left-border">{{ with .Site.Params.contact.subtitle }}{{ . | markdownify }}{{ end }}</h3>
 					<ul class="fh5co-contact-info">
 					{{ range .Site.Params.contact.details }}
 						<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
