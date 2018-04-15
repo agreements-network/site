@@ -6,7 +6,6 @@ WORKDIR /site
 
 RUN hugo \
   --verbose \
-  --canonifyURLs \
   --destination=$BUILD_DIR \
   --baseURL="https://$SITE_NAME"
 

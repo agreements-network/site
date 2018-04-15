@@ -3,7 +3,7 @@ baseurl = "localhost:1313"
 title = "Agreements Network"
 languageCode = "en-us"
 theme = "elate"
-
+canonifyURLs = true
 
 [params]
 
