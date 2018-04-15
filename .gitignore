@@ -6,7 +6,5 @@
 node_modules
 
 /build
-/data
 /deploy
 /public
-/static

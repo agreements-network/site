@@ -1,4 +1,4 @@
-FROM jguyomard/hugo-builder:0.31-extras
+FROM jguyomard/hugo-builder:0.38-extras
 ARG SITE_NAME
 ARG BUILD_DIR
 ADD . /site
