@@ -1,0 +1,18 @@
+	<section id="fh5co-home" data-section="home" class="section-bottom-slant" style="background-image: url(images/{{ .Site.Params.hero.textureimg }}); background-position: center; background-size: 150%;">
+		<div class="gradient"></div>
+		<div class="container">
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+							<h1 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
+							<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
+							{{ with .Site.Params.hero.video }}
+								<a href="{{ .url }}" class="popup-vimeo btn btn-primary btn-video to-animate"><i class="{{ .icon }}"></i> {{ .button | markdownify }}</a>
+							{{ end }}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>

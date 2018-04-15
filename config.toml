@@ -1,29 +1,194 @@
-baseurl = "http://example.org"
-title = "The Agreements Network"
-theme = "dimension"
+# Page settings
+baseurl = "localhost:1313"
+title = "Agreements Network"
 languageCode = "en-us"
-defaultContentLanguage = "en"
-enableRobotsTXT = true
-disableKinds=["RSS"]
-googleAnalytics = "UA-91240938-2"
+theme = "elate"
+
 
 [params]
-  title = "The Agreements Network"
-  description = "<!--[-->Contract management for the networked age.<!--]--><br /><br /><!--[-->Give recognizable legal structure to your digital agreements & grow to global scale.<!--]-->"
-  logo = "fa-diamond"
-  copyright = "Monax Industries Limited"
 
-[[params.social]]
-  medium = "twitter"
-  icon = "twitter"
-  link = "https://twitter.com/monaxHQ"
+  custom_css = ["css/custom.css"]
 
-[[params.social]]
-  medium = "facebook"
-  icon = "facebook"
-  link = "https://facebook.com/monaxHQ"
+  # Meta
+  author = ""
+  description = ""
+  email = ""
+  # Navigation
+  [params.navigation]
+    logo = "AgreementsNetwork_logo.png"
+    brand = "Agreements Network"
 
-[[params.social]]
-  medium = "github"
-  icon = "github"
-  link = "https://github.com/monax"
+    # home = "Home"
+    overview = "Platform"
+    whitepaper = "Whitepaper"
+    usecases = "Use Cases"
+    faq = "FAQ"
+    contact = "Contact"
+
+    # You can add custom links before or after the default links
+    # Assign a weight to define the order
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+     url = "https://docs.agreements.network/"
+     name = "Docs"
+     weight = 10
+
+  # Hero section
+  [params.hero]
+    title = "The Agreements Network"
+    subtitle = "Introducing a decentralized contract management platform that uses smart contract technology to create, prove and operate legal agreements.<br><span class='white'>It's the legal layer for a networked world.</span>"
+    textureimg = "agreements-network-texture.png"
+
+  [params.hero.video]
+    enable = true
+    icon = "icon-play2"
+    button = "Watch the video"
+    url = "https://vimeo.com/channels/staffpicks/93951774"
+
+  # Intro section
+  # Available icons: http://simplelineicons.com/
+  [params.intro]
+
+  [[params.intro.item]]
+    title = "For Lawyers"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "#"
+    external = false
+    sectionLink = "usecases"
+    button = "Read Use Cases"
+    icon = "icon-key"
+    # img = ""
+
+  [[params.intro.item]]
+    title = "For Businesses"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "#"
+    external = false
+    sectionLink = "usecases"
+    button = "Read Use Cases"
+    icon = "icon-chart"
+    # img = ""
+
+  [[params.intro.item]]
+    title = "For Developers"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    url = "https://docs.agreements.network/"
+    external = true
+    sectionLink = ""
+    button = "Read The Docs"
+    icon = "icon-rocket"
+    # img = ""
+
+  # Overview section
+  [params.overview]
+    enable = true
+    title = "Overview"
+    # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+    [[params.overview.col1]]
+      title = "The Problem"
+      description = "Contracts are fundamental to the global economic system, yet the way agreements are formed and monitored is slow and costly. The market is failing to be effectively served by a legal establishment geared towards the bespoke and high-value. Growing markets such as the networked economy need a way to access better legal services and tools that support the way modern commerce is evolving."
+
+    [[params.overview.col2]]
+      title = "The Solution"
+      description = "The Agreements Network is built to enable new and more efficient forms of reaching agreement via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services into legal products. It uses state-of-the-art blockchain and smart contracts technologies to provide consumers with. It's the legal layer for the networked world."
+
+
+  # Whitepaper section
+  [params.whitepaper]
+    enable = true
+
+    [[params.whitepaper.item]]
+      title = "Download Our Whitepaper"
+      description = "The Agreements Network shifts the paradigm from bespoke legal services to scalable, repeatable legal products. The commoditization of legal services benefits both legal producers and the consumers of their services, via a secure token-based ecosystem. The Agreements Network leverages the liquid expectation of digital service delivery lifting legal services onto the same playing field and making it an accessible tool."
+      docimg = "AN-Whitepaper-cover.gif"
+      button = "Download Whitepaper"
+      url = "#"
+
+  # Use Cases section
+  [params.usecases]
+    enable = true
+    title = "Use Cases"
+    # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+
+    [[params.usecases.item]]
+      title = "Corporate Governance"
+      subtitle = "Increasing Margins through Functionality and Reproducability"
+      description = "<p>Corporate governance, the system of rules and processes which control a company, is a significant workstream for lawyers. The beginning of this process is incorporation or organization of a company. Incorporation of a business is one of the most common processes in legal operations, with more than 250,000 new limited liability companies and corporations organizing each quarter in the United States alone. Articles of organization are a necessary dependency for most businesses - the first step to hiring an employee and opening a business bank account, for example.</p><p>The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance like bylaws, equity, and operations contracts.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
+      img = "agreements-network-diagram-05.png"
+      alt = "Corporate Governance"
+
+    [[params.usecases.item]]
+      title = "Equipment Leasing - Fleets"
+      subtitle = "Facilitating As-A-Service Business Models"
+      description = "<p>In the evolving network economy, devices upgrade and proliferate quickly, meaning less incentive to buy a device and keep it for years and more pay-per-use and leasing models. This corresponds to an increase in deployments of fleets of equipment, for example, solar panels, electric car chargers and robotics like drones.</p><img src='images/agreements-network-diagram-08.png' alt='Equipment Leasing - Fleets'><p><strong>Extensible fleet leasing Archetypes.</strong> Equipment leases create commercial relationships around the use of an item of property, for example, a drone. Each unit performs a computerized job with a performance history. Unit function history, as well as things like ownership, payments, rights of use, maintenance and insurance may all be parameterized as workflows in the Agreements Network.</p><img src='images/agreements-network-diagram-11.png' alt='Equipment Leasing - Fleets'>"
+      img = "agreements-network-diagram-06.png"
+      alt = "Equipment Leasing - Fleets"
+
+    [[params.usecases.item]]
+      title = "Content Creators"
+      subtitle = "Earning Money While Protecting Content Rights"
+      description = "<p>The internet has disrupted traditional media channels and built new ones for users to create and distribute content. These new channels bring with them problems for creators of unique content, for example video producers on platforms like YouTube.</p><p>These boundless opportunities for content creators attach complex legal challenges. Content creators in network commerce struggle in three main ways: maintaining ownership of their intellectual property (IP), ensuring fair remuneration for their content, and protecting against the prospect of third-party copyright infringement lawsuits. The Agreements Network is a powerful tool to meet these unique challenges.</p><img src='images/agreements-network-diagram-12.png' alt='Equipment Leasing - Fleets'>"
+      img = "agreements-network-diagram-07.png"
+      alt = "Content Creators"
+
+
+    # [[params.usecases.item]]
+    #   title = "Legal Template Producers"
+    #   subtitle = "Making money building better legal operations"
+    #   description = "<p>Active Agreements create a new method for legal services professionals to serve existing clients while building additional revenue streams and smarter networked operations.</p><p>Using Active Agreements, lawyers can create legally-effective smart contracts to serve their clients better and make more money. The Agreements Network contains the building blocks of automated legal operations. Using the Agreements Network, lawyers can assemble legal prose and workflow “Archetypes” that create, formalize, store and prove client contract rights.</p>"
+    #   img = "agreements-network-diagram-05.png"
+    #   alt = "Legal Template Producers"
+
+
+  # FAQ section
+  [params.faq]
+    enable = true
+    title = "FAQ"
+    # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+    # NOTE: FAQ information is pulled from data/faq.toml
+
+  # Contact section
+  [params.contact]
+    enable = true
+    map = false
+    form = true
+    title = "Connect With Us"
+    # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+    subtitle = "Get In Touch"
+
+    # Available icons: http://simplelineicons.com/
+    details = [
+        ["icon-envelope", "<a href='mailto:contact@monax.io' alt='contact@monax.io'>contact@monax.io</a>"],
+        ["icon-home", "44 Malborough Street, London,<br>W1F7JL, United Kingdom"],
+        # ["icon-phone", "(123) 465-6789"],
+        ["icon-twitter", '<a href="https://twitter.com/monaxhq" target="_blank">twitter.com/monaxhq</a>'],
+        ["icon-facebook", '<a href="https://facebook.com/monaxHQ" target="_blank">facebook.com/monaxhq</a>'],
+        # ["icon-globe", '<a href="/" target="">agreements.network</a>']
+      ]
+
+    # Form labels
+    fname = "First Name"
+    lname = "Last Name"
+    email = "Email"
+    button = "Subscribe To Updates"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = '&copy; Monax Industries 2018. All Rights Reserved.'
+    links = [
+        ["icon-twitter", "https://twitter.com/monaxhq"],
+        ["icon-facebook", "https://www.facebook.com/monaxHQ/"],
+        # ["icon-youtube", "#youtube"]
+      ]

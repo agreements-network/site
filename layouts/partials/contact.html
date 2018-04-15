@@ -1,0 +1,98 @@
+	<section id="fh5co-contact" data-section="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="">{{ with .Site.Params.contact.title }}{{ . | markdownify }}{{ end }}</h2>
+					{{ with .Site.Params.contact.description }}
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext ">
+							<h3>{{ . | markdownify }}</h3>
+						</div>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-sm-6 ">
+					<h3 class="content-subheading left-border">{{ with .Site.Params.contact.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+					<ul class="fh5co-contact-info">
+					{{ range .Site.Params.contact.details }}
+						<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
+					{{ end }}
+					</ul>
+				</div>
+				{{ if .Site.Params.contact.form }}
+				<div class="col-sm-6">
+					<!-- Begin MailChimp Signup Form -->
+					<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+					<div id="mc_embed_signup">
+					   <form action="https://monax.us11.list-manage.com/subscribe/post?u=5b6bb0eef367da61ed27cf5c3&amp;id=0b434f90b4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					      <div id="mc_embed_signup_scroll">
+					         <div class="mc-field-group">
+					         	{{ with .Site.Params.contact.email }}
+					            <label for="mce-EMAIL" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
+					            </label>
+					            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="{{ . }} *" type="text">
+					            {{ end }}
+					         </div>
+					         <div class="mc-field-group">
+					         	{{ with .Site.Params.contact.fname }}
+					            <label for="mce-FNAME" class="sr-only">{{ . | markdownify }} </label>
+					            <input type="text" value="" name="FNAME" class=" form-control" id="mce-FNAME" placeholder="{{ . }}" type="text">
+					            {{ end }}
+					         </div>
+					         <div class="mc-field-group">
+					         	{{ with .Site.Params.contact.lname }}
+					            <label for="mce-LNAME" class="sr-only">{{ . | markdownify }} </label>
+					            <input type="text" value="" name="LNAME" class=" form-control" id="mce-LNAME" placeholder="{{ . }}" type="text">
+					            {{ end }}
+					         </div>
+					         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+					         <div class="mc-field-group input-group">
+					            <ul class="mailchimp-ul">
+					               <li>
+				               			<input type="radio" value="8" name="group[18981]" id="mce-group[18981]-18981-0">
+			               				<label for="mce-group[18981]-18981-0">Monax Equity Investor</label>
+			               				<div class="check"></div>
+			               			</li>
+					               <li>
+				               			<input type="radio" value="1" name="group[18981]" id="mce-group[18981]-18981-1">
+			               				<label for="mce-group[18981]-18981-1">SAFT Investor</label>
+			               				<div class="check"></div>
+			               			</li>
+					               <li>
+				               			<input type="radio" value="2" name="group[18981]" id="mce-group[18981]-18981-2">
+			               				<label for="mce-group[18981]-18981-2">Public Launch</label>
+			               				<div class="check"></div>
+			               			</li>
+					               <li>
+				               			<input type="radio" value="4" name="group[18981]" id="mce-group[18981]-18981-3">
+			               				<label for="mce-group[18981]-18981-3">Other</label>
+			               				<div class="check"></div>
+			               			</li>
+					            </ul>
+					         </div>
+					         <div id="mce-responses" class="clear">
+					            <div class="response" id="mce-error-response" style="display:none"></div>
+					            <div class="response" id="mce-success-response" style="display:none"></div>
+					         </div>
+					         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					         <div style="position: absolute; left: -5000px;" aria-hidden="true">
+					         	<input type="text" name="b_5b6bb0eef367da61ed27cf5c3_0b434f90b4" tabindex="-1" value="">
+					         </div>
+					         <div class="clear">
+					         	<input type="submit" value="{{ .Site.Params.contact.button | markdownify }}" name="subscribe" id="_mc-embedded-subscribe" class="btn btn-primary">
+					         </div>
+					      </div>
+					   </form>
+					</div>
+					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+					<!--End mc_embed_signup-->
+				</div>
+				{{ end }}
+			</div>
+		</div>
+		{{ if .Site.Params.contact.map }}
+        	<div id="map" class=""></div>
+		{{ end }}
+	</section>
