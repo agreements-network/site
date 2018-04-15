@@ -10,9 +10,10 @@ canonifyURLs = true
   custom_css = ["css/custom.css"]
 
   # Meta
-  author = ""
-  description = ""
-  email = ""
+  author = "The Agreements Network Authors"
+  description = "A Decentralized Contract Management solution for small businesses."
+  email = "contact@monax.io"
+
   # Navigation
   [params.navigation]
     logo = "AgreementsNetwork_logo.png"
@@ -170,10 +171,10 @@ canonifyURLs = true
     # Available icons: http://simplelineicons.com/
     details = [
         ["icon-envelope", "<a href='mailto:contact@monax.io' alt='contact@monax.io'>contact@monax.io</a>"],
-        ["icon-home", "44 Malborough Street, London,<br>W1F7JL, United Kingdom"],
+        # ["icon-home", "44 Malborough Street, London,<br>W1F7JL, United Kingdom"],
         # ["icon-phone", "(123) 465-6789"],
-        ["icon-twitter", '<a href="https://twitter.com/monaxhq" target="_blank">twitter.com/monaxhq</a>'],
-        ["icon-facebook", '<a href="https://facebook.com/monaxHQ" target="_blank">facebook.com/monaxhq</a>'],
+        ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
+        ["icon-facebook", '<a href="https://facebook.com/monaxHQ" target="_blank">@monaxHQ</a>'],
         # ["icon-globe", '<a href="/" target="">agreements.network</a>']
       ]
 
@@ -188,7 +189,7 @@ canonifyURLs = true
     enable = true
     copyright = '&copy; Monax Industries 2018. All Rights Reserved.'
     links = [
-        ["icon-twitter", "https://twitter.com/monaxhq"],
-        ["icon-facebook", "https://www.facebook.com/monaxHQ/"],
+        # ["icon-twitter", "https://twitter.com/monaxhq"],
+        # ["icon-facebook", "https://www.facebook.com/monaxHQ/"],
         # ["icon-youtube", "#youtube"]
       ]
