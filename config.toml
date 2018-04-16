@@ -59,21 +59,23 @@ canonifyURLs = true
   [[params.intro.item]]
     title = "For Lawyers"
     description = "The Agreements Network opens up, for the first time, the ability to refine bespoke legal services into scalable legal products."
-    url = "#"
-    external = false
-    sectionLink = "usecases"
-    button = "Read Use Cases"
+    url = "https://www.youtube-nocookie.com/embed/kaR5JDzk0kE?rel=0&amp;showinfo=0"
+    video = true
+    button = "Watch the video"
     icon = "icon-key"
+    external = true
+    # sectionLink = "usecases"
     # img = ""
 
   [[params.intro.item]]
     title = "For Businesses"
     description = "The Agreements Network opens up, for the first time, the ability to understand where you are within the scope of what you've agreed."
-    url = "#"
-    external = false
-    sectionLink = "usecases"
-    button = "Read Use Cases"
+    url = "https://www.youtube-nocookie.com/embed/ypcTTjv_zbw?rel=0&amp;showinfo=0"
+    video = true
+    button = "Watch the video"
     icon = "icon-chart"
+    external = true
+    # sectionLink = "usecases"
     # img = ""
 
   [[params.intro.item]]
