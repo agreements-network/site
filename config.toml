@@ -131,7 +131,7 @@ canonifyURLs = true
       title = "Equipment Leasing - Fleets"
       subtitle = "Facilitating As-A-Service Business Models"
       description = "<p>In the evolving network economy, devices upgrade and proliferate quickly, meaning less incentive to buy a device and keep it for years and more pay-per-use and leasing models. This corresponds to an increase in deployments of fleets of equipment, for example, solar panels, electric car chargers and robotics like drones.</p><img src='images/agreements-network-diagram-08.png' alt='Equipment Leasing - Fleets'><p><strong>Extensible fleet leasing Archetypes.</strong> Equipment leases create commercial relationships around the use of an item of property, for example, a drone. Each unit performs a computerized job with a performance history. Unit function history, as well as things like ownership, payments, rights of use, maintenance and insurance may all be parameterized as workflows in the Agreements Network.</p><img src='images/agreements-network-diagram-11.png' alt='Equipment Leasing - Fleets'>"
-      img = "agreements-network-diagram-06.png"
+      img = "fleet-lease.png"
       alt = "Equipment Leasing - Fleets"
 
     [[params.usecases.item]]
