@@ -12,7 +12,7 @@ canonifyURLs = true
   # Meta
   author = "The Agreements Network Authors"
   description = "A Decentralized Contract Management solution for small businesses."
-  email = "contact@monax.io"
+  email = "join@agreements.network"
 
   # Navigation
   [params.navigation]
@@ -171,7 +171,7 @@ canonifyURLs = true
     # Available icons: http://simplelineicons.com/
     details = [
         ["icon-speech", "<a href='https://t.me/joinchat/INVnsxJsQmqPhizrhiqDnA' target='_blank'>telegram</a>"],
-        ["icon-envelope", "<a href='mailto:contact@monax.io' alt='contact@monax.io'>contact@monax.io</a>"],
+        ["icon-envelope", "<a href='mailto:join@agreements.network' alt='join@agreements.network'>join@agreements.network</a>"],
         ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
         ["icon-youtube", "<a href='http://www.youtube.com/c/MonaxIndustries ' target='_blank'>@monaxindustries</a>"]
       ]
@@ -186,7 +186,4 @@ canonifyURLs = true
   [params.footer]
     enable = true
     copyright = '&copy; The Agreements Network Founders 2018. All Rights Reserved.'
-    # links = [
-    #     ["icon-twitter", "https://twitter.com/monaxhq"],
-    #     ["icon-facebook", "https://www.facebook.com/monaxHQ/"],
-    #   ]
+    # links = [] # same format as details section
