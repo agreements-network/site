@@ -37,18 +37,20 @@
 					         </div>
 					         <div class="mc-field-group">
 					         	{{ with .Site.Params.contact.fname }}
-					            <label for="mce-FNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span></label>
-					            <input type="text" value="" name="FNAME" class=" form-control" id="mce-FNAME" placeholder="{{ . }} *" type="text">
+					            <label for="mce-FNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
+					            </label>
+					            <input type="text" value="" name="FNAME" class="required fname form-control" id="mce-FNAME" placeholder="{{ . }} *" type="text">
 					            {{ end }}
 					         </div>
 					         <div class="mc-field-group">
 					         	{{ with .Site.Params.contact.lname }}
-					            <label for="mce-LNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span></label>
-					            <input type="text" value="" name="LNAME" class=" form-control" id="mce-LNAME" placeholder="{{ . }} *" type="text">
+					            <label for="mce-LNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
+					            </label>
+					            <input type="text" value="" name="LNAME" class="required lname form-control" id="mce-LNAME" placeholder="{{ . }} *" type="text">
 					            {{ end }}
 					         </div>
-					         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 					         <input type="hidden" class="mc-field-group input-group" name="group[18981]" value="2" id="mce-group[18981]-18981-2">
+					         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 					         <div id="mce-responses" class="clear">
 					            <div class="response" id="mce-error-response" style="display:none"></div>
 					            <div class="response" id="mce-success-response" style="display:none"></div>
