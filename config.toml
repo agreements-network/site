@@ -19,21 +19,20 @@ canonifyURLs = true
     logo = "AgreementsNetwork_logo.png"
     brand = "Agreements Network"
 
+    # You can add custom links before or after the default links
+    # Assign a weight to define the order
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
     # home = "Home"
     overview = "Overview"
     whitepaper = "Whitepaper"
     usecases = "Use Cases"
     faq = "FAQ"
     contact = "Contact"
-
-    # You can add custom links before or after the default links
-    # Assign a weight to define the order
-
-    # prepended links
-    #[[menu.prepend]]
-    #  url = "http://gohugo.io"
-    #  name = "Hugo"
-    #  weight = 10
 
     # postpended links
     [[menu.postpend]]
@@ -91,7 +90,6 @@ canonifyURLs = true
   [params.overview]
     enable = true
     title = "Overview"
-    # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
     [[params.overview.col1]]
       title = "The Problem"
@@ -117,8 +115,6 @@ canonifyURLs = true
   [params.usecases]
     enable = true
     title = "Use Cases"
-    # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-
 
     [[params.usecases.item]]
       title = "Corporate Governance"
@@ -154,8 +150,6 @@ canonifyURLs = true
   [params.faq]
     enable = true
     title = "FAQ"
-    # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-
     # NOTE: FAQ information is pulled from data/faq.toml
 
   # Contact section
