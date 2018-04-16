@@ -170,12 +170,11 @@ canonifyURLs = true
 
     # Available icons: http://simplelineicons.com/
     details = [
+        ["icon-speech", "<a href='https://t.me/joinchat/INVnsxJsQmqPhizrhiqDnA' target='_blank'>telegram</a>"]
         ["icon-envelope", "<a href='mailto:contact@monax.io' alt='contact@monax.io'>contact@monax.io</a>"],
-        # ["icon-home", "44 Malborough Street, London,<br>W1F7JL, United Kingdom"],
-        # ["icon-phone", "(123) 465-6789"],
         ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
         ["icon-facebook", '<a href="https://facebook.com/monaxHQ" target="_blank">@monaxHQ</a>'],
-        # ["icon-globe", '<a href="/" target="">agreements.network</a>']
+        ["icon-youtube", "<a href='http://www.youtube.com/c/MonaxIndustries ' target='_blank'>@monaxindustries</a>"]
       ]
 
     # Form labels
@@ -187,9 +186,8 @@ canonifyURLs = true
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Monax Industries 2018. All Rights Reserved.'
-    links = [
-        # ["icon-twitter", "https://twitter.com/monaxhq"],
-        # ["icon-facebook", "https://www.facebook.com/monaxHQ/"],
-        # ["icon-youtube", "#youtube"]
-      ]
+    copyright = '&copy; The Agreements Network Founders 2018. All Rights Reserved.'
+    # links = [
+    #     ["icon-twitter", "https://twitter.com/monaxhq"],
+    #     ["icon-facebook", "https://www.facebook.com/monaxHQ/"],
+    #   ]
