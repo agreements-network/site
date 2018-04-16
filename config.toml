@@ -173,7 +173,6 @@ canonifyURLs = true
         ["icon-speech", "<a href='https://t.me/joinchat/INVnsxJsQmqPhizrhiqDnA' target='_blank'>telegram</a>"],
         ["icon-envelope", "<a href='mailto:contact@monax.io' alt='contact@monax.io'>contact@monax.io</a>"],
         ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
-        ["icon-facebook", '<a href="https://facebook.com/monaxHQ" target="_blank">@monaxHQ</a>'],
         ["icon-youtube", "<a href='http://www.youtube.com/c/MonaxIndustries ' target='_blank'>@monaxindustries</a>"]
       ]
 
