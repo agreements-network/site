@@ -37,13 +37,13 @@
 					         </div>
 					         <div class="mc-field-group">
 					         	{{ with .Site.Params.contact.fname }}
-					            <label for="mce-FNAME" class="sr-only">{{ . | markdownify }} </label>
+					            <label for="mce-FNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span></label>
 					            <input type="text" value="" name="FNAME" class=" form-control" id="mce-FNAME" placeholder="{{ . }}" type="text">
 					            {{ end }}
 					         </div>
 					         <div class="mc-field-group">
 					         	{{ with .Site.Params.contact.lname }}
-					            <label for="mce-LNAME" class="sr-only">{{ . | markdownify }} </label>
+					            <label for="mce-LNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span></label>
 					            <input type="text" value="" name="LNAME" class=" form-control" id="mce-LNAME" placeholder="{{ . }}" type="text">
 					            {{ end }}
 					         </div>
