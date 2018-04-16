@@ -99,7 +99,7 @@ canonifyURLs = true
 
     [[params.overview.col2]]
       title = "The Solution"
-      description = "The Agreements Network is built to enable new and more efficient forms of reaching agreement via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services into legal products. It uses state-of-the-art blockchain and smart contracts technologies to provide consumers with. It's the legal layer for the networked world."
+      description = "The Agreements Network is built to enable new and more efficient forms of reaching agreement via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services into legal products. It uses blockchain and smart contracts technologies to provide consumers with a view on their agreements previously unavailable."
 
 
   # Whitepaper section
@@ -108,7 +108,7 @@ canonifyURLs = true
 
     [[params.whitepaper.item]]
       title = "Download Our Whitepaper"
-      description = "The Agreements Network shifts the paradigm from bespoke legal services to scalable, repeatable legal products. The commoditization of legal services benefits both legal producers and the consumers of their services, via a secure token-based ecosystem. The Agreements Network leverages the liquid expectation of digital service delivery lifting legal services onto the same playing field and making it an accessible tool."
+      description = "The Agreements Network shifts the paradigm from bespoke legal services to scalable, repeatable legal products. The commoditization of legal services benefits both legal producers and the consumers of their services, via a secure token-based ecosystem.<br/>The Agreements Network leverages the liquid expectation of digital service delivery lifting legal services onto the same playing field and making it an accessible tool.<br/>Read our Whitepaper to learn more about how this is done."
       docimg = "AN-Whitepaper-cover.gif"
       button = "Read Whitepaper"
       url = "files/an_whitepaper_v1.0.pdf"
