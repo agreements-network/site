@@ -10,9 +10,9 @@
 						<h2>{{ .title }}</h2>
 						<p>{{ .description }}</p>
 						{{ if .video }}
-							<a href="{{ .url }}" class="popup-vimeo btn btn-primary btn-video to-animate"><i class="{{ .icon }}"></i> {{ .button | markdownify }}</a>
+							<p><a href="{{ .url }}" class="popup-vimeo btn btn-primary btn-video to-animate">{{ .button | markdownify }}</a></p>
 						{{ else }}
-							<p><a href="{{ .url }}" data-nav-section="{{ .sectionLink }}" {{ if .external }} target="_blank" {{ end }} class="btn btn-primary">{{ .button}}</a></p>
+							<p><a href="{{ .url }}" data-nav-section="{{ .sectionLink }}" {{ if .external }} target="_blank" {{ end }} class="btn btn-primary">{{ .button | markdownify }}</a></p>
 						{{ end }}
 					</div>
 				</div>
