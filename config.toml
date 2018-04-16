@@ -59,7 +59,7 @@ canonifyURLs = true
 
   [[params.intro.item]]
     title = "For Lawyers"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "The Agreements Network opens up, for the first time, the ability to refine bespoke legal services into scalable legal products."
     url = "#"
     external = false
     sectionLink = "usecases"
@@ -69,7 +69,7 @@ canonifyURLs = true
 
   [[params.intro.item]]
     title = "For Businesses"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "The Agreements Network opens up, for the first time, the ability to understand where you are within the scope of what you've agreed."
     url = "#"
     external = false
     sectionLink = "usecases"
@@ -79,7 +79,7 @@ canonifyURLs = true
 
   [[params.intro.item]]
     title = "For Developers"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "The Agreements Network is a public blockchain ecosystem that allows many service providers revenue opportunities."
     url = "https://docs.agreements.network/"
     external = true
     sectionLink = ""
