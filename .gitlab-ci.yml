@@ -19,13 +19,13 @@ variables:
 # Variable packages
 .variables_staging: &vars_staging
   only:
-    - develop
+    - staging@monax/agreements.network
   variables:
     SITE_NAME: "staging.agreements.network"
 
 .variables_production: &vars_production
   only:
-    - master
+    - production@monax/agreements.network
   variables:
     SITE_NAME: "agreements.network"
 
