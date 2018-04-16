@@ -20,7 +20,7 @@ canonifyURLs = true
     brand = "Agreements Network"
 
     # home = "Home"
-    overview = "Platform"
+    overview = "Overview"
     whitepaper = "Whitepaper"
     usecases = "Use Cases"
     faq = "FAQ"
