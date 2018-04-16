@@ -99,7 +99,7 @@ canonifyURLs = true
 
     [[params.overview.col2]]
       title = "The Solution"
-      description = "The Agreements Network is built to enable new and more efficient forms of reaching agreement via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services into legal products. It uses blockchain and smart contracts technologies to provide consumers with a view on their agreements previously unavailable. With Active Agreements business can visualize their risk in a new and compelling way."
+      description = "The Agreements Network is built to enable new and more efficient forms of reaching agreement via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services into legal products. It uses blockchain and smart contracts technologies to provide consumers with a real-time view on their obligations. Active Agreements allow businesses to visualize their risk in a compelling way."
 
 
   # Whitepaper section
@@ -164,7 +164,7 @@ canonifyURLs = true
     map = false
     form = true
     title = "Connect With Us"
-    # description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "The founders of the Agreements Network would love for you to join our growing ecosystem. Feel free to connect with us below to understand a bit more about the opportunities to join the ecosystem."
 
     subtitle = "Get In Touch"
 
@@ -172,8 +172,8 @@ canonifyURLs = true
     details = [
         ["icon-speech", "<a href='https://t.me/joinchat/INVnsxJsQmqPhizrhiqDnA' target='_blank'>telegram</a>"],
         ["icon-envelope", "<a href='mailto:join@agreements.network' alt='join@agreements.network'>join@agreements.network</a>"],
-        ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
-        ["icon-youtube", "<a href='http://www.youtube.com/c/MonaxIndustries ' target='_blank'>@monaxindustries</a>"]
+        # ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
+        # ["icon-youtube", "<a href='http://www.youtube.com/c/MonaxIndustries ' target='_blank'>@monaxindustries</a>"]
       ]
 
     # Form labels
