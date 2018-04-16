@@ -63,7 +63,7 @@ canonifyURLs = true
     video = true
     button = "Watch the video"
     icon = "icon-key"
-    external = true
+    # external = true
     # sectionLink = "usecases"
     # img = ""
 
@@ -74,7 +74,7 @@ canonifyURLs = true
     video = true
     button = "Watch the video"
     icon = "icon-chart"
-    external = true
+    # external = true
     # sectionLink = "usecases"
     # img = ""
 
