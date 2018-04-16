@@ -159,7 +159,7 @@ canonifyURLs = true
     enable = true
     map = false
     form = true
-    title = "Connect With Us"
+    title = "Connect With The Ecosystem"
     description = "The founders of the Agreements Network would love for you to join our growing ecosystem. Feel free to connect with us below to understand a bit more about the opportunities to join the ecosystem."
 
     subtitle = "Get In Touch"
