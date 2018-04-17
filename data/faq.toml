@@ -47,7 +47,11 @@ The Agreements Network is a hybrid solution that leverages interconnected distri
     [[section.item]]
         question = "Why is the Agreements Network not built on Ethereum?"
         answer = """
-No text yet
+- The decision to not build on Ethereum was chosen in order to allow the Agreements Network to be in the most advantageous position to allow for contribution and collaboration across the ecosystem while promoting interoperability across networks.
+- Monax's history has been in the development of ecosystem applications and tools. The open-sourced Monax platform, Hyperleder Burrow (ethereum virtual machine), and smart contract-based SKDs are a few examples of this. 
+- Grow ecosystem applications and tools
+- To allow for scaling by businesses who desire a permissioned network
+- Allow for the collaboration across applications 
 """
     [[section.item]]
         question = "What is the permissioning model of the Agreements Network?"
