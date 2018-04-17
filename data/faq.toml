@@ -1,31 +1,3 @@
-
-[[section]]
-    title = "Basics"
-
-    [[section.item]]
-        question = "What is the Agreements Network?"
-        answer = """
-No text yet
-"""
-
-    [[section.item]]
-        question = "Where's your whitepaper?"
-        answer = """
-No text yet
-"""
-
-    [[section.item]]
-        question = "Where's your technical (yellow) paper?"
-        answer = """
-No text yet
-"""
-
-    [[section.item]]
-        question = "Where's your governance (orange) paper?"
-        answer = """
-No text yet
-"""
-
 [[section]]
     title = "Basics of Agreements"
 
@@ -81,7 +53,7 @@ No text yet
 """
 
 [[section]]
-    title = "Basics of the Agreements Network's Protocol"
+    title = "Basics of the Protocol"
 
     [[section.item]]
         question = "I'm a lawyer, how can I make money by using the Agreements Network?"
@@ -100,7 +72,7 @@ No text yet
 """
 
 [[section]]
-    title = "Token Economics"
+    title = "Basics of the Economics"
 
     [[section.item]]
         question = "Why do you have a token?"
