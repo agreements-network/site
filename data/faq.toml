@@ -79,12 +79,16 @@ No text yet
     [[section.item]]
         question = "I'm a smart contract developer, how can I build things for the Agreements Network?"
         answer = """
-No text yet
+- Develop features not organic to the Agreements Network
+- Extend the network of capabilities on top of the Agreements Network
+- Create contract templates and contracts 
 """
     [[section.item]]
         question = "I'm a service provider for various ethereum systems, how can I integrate my services into the Agreements Network?"
         answer = """
-No text yet
+- Connect solutions linked to the vital commercial data contained within the Agreements Network.
+- Build applications that use the Agreements Network's APIs. 
+- Fulfill functions not native to the Agreements Network
 """
 
 [[section]]
