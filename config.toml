@@ -50,7 +50,7 @@ canonifyURLs = true
     enable = true
     icon = "icon-play2"
     button = "Watch the video"
-    url = "https://www.youtube-nocookie.com/embed/-eMPz8D-VlA?rel=0&amp;showinfo=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0"
+    url = "https://www.youtube-nocookie.com/embed/-eMPz8D-VlA?rel=0&amp;showinfo=0&amp;controls=0&amp;autoplay=1"
 
   # Intro section
   # Available icons: http://simplelineicons.com/
@@ -59,7 +59,7 @@ canonifyURLs = true
   [[params.intro.item]]
     title = "For Lawyers"
     description = "The Agreements Network opens up, for the first time, the ability to refine bespoke legal services into scalable legal products."
-    url = "https://www.youtube-nocookie.com/embed/kaR5JDzk0kE?rel=0&amp;showinfo=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0"
+    url = "https://www.youtube-nocookie.com/embed/kaR5JDzk0kE?rel=0&amp;showinfo=0&amp;controls=0&amp;autoplay=1"
     video = true
     button = "Watch the video"
     icon = "icon-key"
@@ -70,7 +70,7 @@ canonifyURLs = true
   [[params.intro.item]]
     title = "For Businesses"
     description = "The Agreements Network opens up, for the first time, the ability to understand where you are within the scope of what you've agreed."
-    url = "https://www.youtube-nocookie.com/embed/ypcTTjv_zbw?rel=0&amp;showinfo=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0"
+    url = "https://www.youtube-nocookie.com/embed/ypcTTjv_zbw?rel=0&amp;showinfo=0&amp;controls=0&amp;autoplay=1"
     video = true
     button = "Watch the video"
     icon = "icon-chart"
