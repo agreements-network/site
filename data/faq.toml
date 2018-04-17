@@ -48,15 +48,15 @@ The Agreements Network is a hybrid solution that leverages interconnected distri
         question = "Why is the Agreements Network not built on Ethereum?"
         answer = """
 - The decision to not build on Ethereum was chosen in order to allow the Agreements Network to be in the most advantageous position to allow for contribution and collaboration across the ecosystem while promoting interoperability across networks.
-- Monax's history has been in the development of ecosystem applications and tools. The open-sourced Monax platform, Hyperleder Burrow (ethereum virtual machine), and smart contract-based SKDs are a few examples of this. 
+- Monax's history has been in the development of ecosystem applications and tools. The open-sourced Monax platform, Hyperleder Burrow (ethereum virtual machine), and smart contract-based SKDs are a few examples of this.
 - Grow ecosystem applications and tools
 - To allow for scaling by businesses who desire a permissioned network
-- Allow for the collaboration across applications 
+- Allow for the collaboration across applications
 """
     [[section.item]]
         question = "What is the permissioning model of the Agreements Network?"
         answer = """
-No text yet
+The Agreements Network is a public, permissioned blockchain design. This means that for most of the users most of the time that it operates the same way as public unpermissioned blockchain networks operate. However, in order to optimize the blockchain for the use case of contract management, the founders have put in place a governance system around new smart contracts that are added to the blockchain. Because the protocol is built to be a no-code solution for almost all participants it is actually rarely the case that a user will need to add new smart contracts to the blockchain. We do not **prohibit** new smart contracts being added to the chain, however. We will be leveraging the permissioning system of Hyperledger Burrow to allow any one to *propose* new smart contracts get added to the network. These proposals are voted on by the validators. If successful, then the smart contracts are added to the chain. If unsuccessful they are not.
 """
     [[section.item]]
         question = "How do I become a validator of the Agreements Network?"
@@ -71,7 +71,7 @@ No text yet
         question = "I'm a lawyer, how can I make money by using the Agreements Network?"
         answer = """
 - As an Archetype producer to create and upload Archetypes (legal prose plus smart contract workflows) of Active Agreements.
-- Archetype producers do not need to have coding skills. 
+- Archetype producers do not need to have coding skills.
 - Archetype producers earn a usage fee when an Active Agreement is created within the Network based on their activities.
 - As a Tester by providing verification of the suitability for purpose of Archetypes uploaded to the Agreements Network.
 - Providing attestations, Testers earn fees when an Active Agreement is created within the Network based on their activities.
