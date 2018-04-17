@@ -4,98 +4,136 @@
 
     [[section.item]]
         question = "What is the Agreements Network?"
-        answer = "No text yet"
+        answer = """
+No text yet
+"""
 
     [[section.item]]
         question = "Where's your whitepaper?"
-        answer = "No text yet"
+        answer = """
+No text yet
+"""
 
     [[section.item]]
         question = "Where's your technical (yellow) paper?"
-        answer = "No text yet"
+        answer = """
+No text yet
+"""
 
     [[section.item]]
         question = "Where's your governance (orange) paper?"
-        answer = "No text yet"
+        answer = """
+No text yet
+"""
 
 [[section]]
     title = "Basics of Agreements"
 
     [[section.item]]
         question = "Why do people want to enter into agreements at all?"
-        answer = "Certainty over whether an agreement was made<br>Clarity between parties about the specifics of what was agreed<br>Benefits/consideration agreed<br>Mechanisms/rules of transaction<br>Greater efficiency in resolving disputes<br>Enforceability - ambient legal structures allow the weak to trust the strong"
+        answer = """
+- Certainty over whether an agreement was made
+- Clarity between parties about the specifics of what was agreed
+- Benefits/consideration agreed
+- Mechanisms/rules of transaction
+- Greater efficiency in resolving disputes
+- Enforceability - ambient legal structures allow the weak to trust the strong
+"""
 
     [[section.item]]
         question = "Why do people (or other autonomous entities) stand to gain by entering into an agreement digitally?"
-        answer = "Computable reference object (could drive automation elsewhere)<br>Cryptographic proof of agreement state (by parties timestamping, signing it, ordering it amongst other documents by hash-chaining)<br>Security against loss<br>Interaction with other agreements (e.g. static hierarchical, or dynamic with respect to state change)<br>Updateability or freshness<br>Fulfilment logs and other event streams"
+        answer = """
+- Computable reference object (could drive automation elsewhere)
+- Cryptographic proof of agreement state (by parties timestamping, signing it, ordering it amongst other documents by hash-chaining)
+- Security against loss
+- Interaction with other agreements (e.g. static hierarchical, or dynamic with respect to state change)
+- Updateability or freshness
+- Fulfilment logs and other event streams
+"""
 
 [[section]]
     title = "Basics of Network"
 
     [[section.item]]
         question = "What is the Agreements Network built on?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "What is Cosmos?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "Why is the Agreements Network not built on Ethereum?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "What is the permissioning model of the Agreements Network?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "How do I become a validator of the Agreements Network?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
 
 [[section]]
     title = "Basics of the Agreements Network's Protocol"
 
     [[section.item]]
         question = "I'm a lawyer, how can I make money by using the Agreements Network?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "I'm a smart contract developer, how can I build things for the Agreements Network?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "I'm a service provider for various ethereum systems, how can I integrate my services into the Agreements Network?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
 
 [[section]]
     title = "Token Economics"
 
     [[section.item]]
         question = "Why do you have a token?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "What does your token do?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "When is your ICO?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "When is your presale?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "What is the distribution of the token on network launch?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "What will the price of the token be in 1, 3, 5 years?"
-        answer = "No text yet"
-
+        answer = """
+No text yet
+"""
     [[section.item]]
         question = "I'm a US based token purchaser, can I buy your token?"
-        answer = "No text yet"
+        answer = """
+No text yet
+"""
