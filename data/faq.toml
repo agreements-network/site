@@ -70,7 +70,11 @@ No text yet
     [[section.item]]
         question = "I'm a lawyer, how can I make money by using the Agreements Network?"
         answer = """
-No text yet
+- As an Archetype producer to create and upload Archetypes (legal prose plus smart contract workflows) of Active Agreements.
+- Archetype producers do not need to have coding skills. 
+- Archetype producers earn a usage fee when an Active Agreement is created within the Network based on their activities.
+- As a Tester by providing verification of the suitability for purpose of Archetypes uploaded to the Agreements Network.
+- Providing attestations, Testers earn fees when an Active Agreement is created within the Network based on their activities.
 """
     [[section.item]]
         question = "I'm a smart contract developer, how can I build things for the Agreements Network?"
