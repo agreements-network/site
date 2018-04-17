@@ -29,12 +29,19 @@
     [[section.item]]
         question = "What is the Agreements Network built on?"
         answer = """
-No text yet
+The Agreements Network is a hybrid solution that leverages interconnected distributed systems; specifically, it will utilize:
+- Ethereum public blockchain for the operation of the Agreement Network's token infrastructure  [https://www.ethereum.org/]
+- The Cosmos Hub is a Proof-of-Stake blockchain to be launched by the Cosmos Network; it uses Tendermint consensus, contains a built-in governance protocol, and serves as coordinator for interoperability between other blockchains [https://cosmos.network/intro]
+- InterPlanetary File System (IPFS) for storage of content [https://ipfs.io/]
+- Hyperledger Burrow’s permissioned Ethereum Virtual Machine  [https://github.com/hyperledger/burrow]
+- Monax open source components (e.g. bosmarmot)  [https://github.com/monax/bosmarmot]
 """
     [[section.item]]
         question = "What is Cosmos?"
         answer = """
-No text yet
+- Cosmos is a network of blockchains whose purpose is to allow many sovereign and easy-to-develop blockchains to scale and interoperate with each other, creating an Internet of Blockchains.  
+- The first blockchain in the Cosmos network is the Cosmos hub. The Cosmos hub connects to zones via the novel IBC (inter-blockchain communication) protocol and keeps a record of the total number of tokens in each zone. 
+- The Cosmos Hub can connect to many different kinds of zones - public or private - as long as each zone speaks IBC. Tendermint-based Zones are natively compatible with IBC, but any fast-finality consensus algorithm can be used as a replacement. [(https://cosmos.network/intro)] 
 """
     [[section.item]]
         question = "Why is the Agreements Network not built on Ethereum?"
