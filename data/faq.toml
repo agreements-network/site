@@ -108,6 +108,7 @@ A token is used to assure the operational backbone for the Agreements Network wi
 - If the users act in accordance with the Network’s rules and later wish to receive their bond back, they may do so. 
 - If the users do not act in accordance with the Network’s rules then they have a portion of their bond “slashed,” or reduced. 
 - Tokens also provide spam protection which would hurt the overall operation of the Network. 
+- NEED COMMENT ON COMSUMERS? 
 """
     [[section.item]]
         question = "When is your ICO?"
