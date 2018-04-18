@@ -51,7 +51,7 @@ variables:
   - |
     curl -sSL https://sdk.cloud.google.com | bash &>/dev/null
     # [csk] I know, I know, but you try it without.... ^^^
-    echo $GCS_CLIENT_SECRET > client-secret.json
+    echo $GCS_CLIENT_SECRET_SITES > client-secret.json
     $CLOUDSDK_BIN_PATH/gcloud auth activate-service-account --key-file client-secret.json
     rm client-secret.json
     $CLOUDSDK_BIN_PATH/gsutil -m \
