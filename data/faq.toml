@@ -102,7 +102,12 @@ A token is used to assure the operational backbone for the Agreements Network wi
     [[section.item]]
         question = "What does your token do?"
         answer = """
-No text yet
+- The Agreements Network token is used by all participants. 
+- For Producers, Testers, and Validators to participate they will have to buy tokens and place them into a bond. 
+- Bonds are used extensively and are contracts resembling machine-controlled escrow. 
+- If the users act in accordance with the Network’s rules and later wish to receive their bond back, they may do so. 
+- If the users do not act in accordance with the Network’s rules then they have a portion of their bond “slashed,” or reduced. 
+- Tokens also provide spam protection which would hurt the overall operation of the Network. 
 """
     [[section.item]]
         question = "When is your ICO?"
