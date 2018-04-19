@@ -80,7 +80,7 @@ canonifyURLs = true
 
   [[params.intro.item]]
     title = "For Developers"
-    description = "The Agreements Network is a decentralised contract management platform. It’s foundation consists of blockchain data assurance, along with smart contract Archetypes and Active Agreements."
+    description = "The Agreements Network is a decentralised, blockchain-based contract management platform."
     url = "https://docs.agreements.network/"
     external = true
     sectionLink = ""
