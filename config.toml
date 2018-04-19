@@ -136,7 +136,7 @@ canonifyURLs = true
       title = "Corporate Governance"
       subtitle = "Increasing Margins through Functionality and Reproducability"
       description = "<p>Corporate governance (the rules and processes which control a company) is traditionally a meaty revenue stream for lawyers. The first stage in this essential business process is company incorporation or organization. The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance, thus unlocking further potential legal work.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
-      img = "agreements-network-diagram-05.png"
+      
       alt = "Corporate Governance"
 
     # [[params.usecases.item]]
