@@ -135,7 +135,7 @@ canonifyURLs = true
     [[params.usecases.item]]
       title = "Content Creators"
       subtitle = "Earning Money While Protecting Content Rights"
-      description = "<p>The internet has disrupted traditional media channels and built new ones for users to create and distribute content. These new channels bring with them problems for creators of unique content, for example video producers on platforms like YouTube.</p><p>These boundless opportunities for content creators attach complex legal challenges. Content creators in network commerce struggle in three main ways: maintaining ownership of their intellectual property (IP), ensuring fair remuneration for their content, and protecting against the prospect of third-party copyright infringement lawsuits. The Agreements Network is a powerful tool to meet these unique challenges.</p><img src='images/agreements-network-diagram-12.png' alt='Equipment Leasing - Fleets'>"
+      description = "<p>The internet has generated profitable new media platforms for users to create and distribute content (YouTube etc). Despite the vast opportunities there are problems for creators of unique content, for example ownership of their intellectual property, ensuring fair remuneration, and protecting against third-party copyright infringement lawsuits. The Agreements Network is a powerful tool to meet these unique challenges.</p><img src='images/agreements-network-diagram-12.png' alt='Equipment Leasing - Fleets'>"
       img = "agreements-network-diagram-07.png"
       alt = "Content Creators"
 
