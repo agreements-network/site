@@ -80,7 +80,7 @@ canonifyURLs = true
 
   [[params.intro.item]]
     title = "For Developers"
-    description = "The Agreements Network is a blockchain-based contract management platform featuring powerful smart contracts. Start building your own solutions!"
+    description = "The Agreements Network is a blockchain-based contract management platform featuring powerful smart contracts."
     url = "https://docs.agreements.network/"
     external = true
     sectionLink = ""
