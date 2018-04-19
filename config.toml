@@ -58,7 +58,7 @@ canonifyURLs = true
 
   [[params.intro.item]]
     title = "For Lawyers"
-    description = "The Agreements Network is a foundation for open legal processes that will drive exponential growth in global networks."
+    description = "The Agreements Network is the foundation for open legal processes that will drive exponential growth in global networks."
     url = "https://www.youtube-nocookie.com/embed/kaR5JDzk0kE?rel=0&amp;showinfo=0&amp;controls=0&amp;autoplay=1"
     video = true
     button = "Watch the video"
@@ -80,7 +80,7 @@ canonifyURLs = true
 
   [[params.intro.item]]
     title = "For Developers"
-    description = "The Agreements Network is a decentralised, blockchain-based contract management platform."
+    description = "The Agreements Network is a blockchain-based contract management platform featuring powerful smart contracts. Start building your own solutions!"
     url = "https://docs.agreements.network/"
     external = true
     sectionLink = ""
