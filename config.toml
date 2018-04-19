@@ -119,26 +119,25 @@ canonifyURLs = true
     title = "Use Cases"
 
     [[params.usecases.item]]
-      title = "Corporate Governance"
-      subtitle = "Increasing Margins through Functionality and Reproducability"
-      description = "<p>Corporate governance, the system of rules and processes which control a company, is a significant workstream for lawyers. The beginning of this process is incorporation or organization of a company. Incorporation of a business is one of the most common processes in legal operations, with more than 250,000 new limited liability companies and corporations organizing each quarter in the United States alone. Articles of organization are a necessary dependency for most businesses - the first step to hiring an employee and opening a business bank account, for example.</p><p>The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance like bylaws, equity, and operations contracts.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
-      img = "agreements-network-diagram-05.png"
-      alt = "Corporate Governance"
-
-    [[params.usecases.item]]
       title = "Equipment Leasing - Fleets"
       subtitle = "Facilitating As-A-Service Business Models"
       description = "<p>In the evolving network economy, devices upgrade and proliferate quickly, resulting in a trend towards pay-per-use and leasing models and in deployments of fleets of equipment, for example, robotics like drones. To serve this market, agreements issues such as unit function history, ownership, payments, rights of use, maintenance and insurance may all be parameterized as workflows in the Agreements Network.</p><img src='images/agreements-network-diagram-11.png' alt='Equipment Leasing - Fleets'>"
       img = "fleet-lease.png"
       alt = "Equipment Leasing - Fleets"
 
-    [[params.usecases.item]]
+     [[params.usecases.item]]
       title = "Content Creators"
       subtitle = "Earning Money While Protecting Content Rights"
       description = "<p>The internet has generated profitable new media platforms for users to create and distribute content (YouTube etc). Despite the vast opportunities there are problems for creators of unique content, for example ownership of their intellectual property, ensuring fair remuneration, and protecting against third-party copyright infringement lawsuits. The Agreements Network is a powerful tool to meet these unique challenges.</p><img src='images/agreements-network-diagram-12.png' alt='Equipment Leasing - Fleets'>"
       img = "agreements-network-diagram-07.png"
       alt = "Content Creators"
-
+      
+    [[params.usecases.item]]
+      title = "Corporate Governance"
+      subtitle = "Increasing Margins through Functionality and Reproducability"
+      description = "<p>Corporate governance, the system of rules and processes which control a company, is a significant workstream for lawyers. The beginning of this process is incorporation or organization of a company. Incorporation of a business is one of the most common processes in legal operations, with more than 250,000 new limited liability companies and corporations organizing each quarter in the United States alone. Articles of organization are a necessary dependency for most businesses - the first step to hiring an employee and opening a business bank account, for example.</p><p>The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance like bylaws, equity, and operations contracts.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
+      img = "agreements-network-diagram-05.png"
+      alt = "Corporate Governance"
 
     # [[params.usecases.item]]
     #   title = "Legal Template Producers"
