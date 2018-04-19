@@ -81,13 +81,13 @@ No text yet
         answer = """
 - Develop features not organic to the Agreements Network
 - Extend the network of capabilities on top of the Agreements Network
-- Create contract templates and contracts 
+- Create contract templates and contracts
 """
     [[section.item]]
         question = "I'm a service provider for various ethereum systems, how can I integrate my services into the Agreements Network?"
         answer = """
 - Connect solutions linked to the vital commercial data contained within the Agreements Network.
-- Build applications that use the Agreements Network's APIs. 
+- Build applications that use the Agreements Network's APIs.
 - Fulfill functions not native to the Agreements Network
 """
 
@@ -97,23 +97,23 @@ No text yet
     [[section.item]]
         question = "Why do you have a token?"
         answer = """
-A token is used to assure the operational backbone for the Agreements Network within the proof of stake decentralized consensus mechanism. Also, a token was needed to prevent cheating and prevent spamming / security concerns among participants on the network.  
+A token is used to assure the operational backbone for the Agreements Network within the proof of stake decentralized consensus mechanism. Also, a token was needed to prevent cheating and prevent spamming / security concerns among participants on the network.
 """
     [[section.item]]
         question = "What does your token do?"
         answer = """
-- The Agreements Network token is used by all participants. 
-- For Producers, Testers, and Validators to participate they will have to buy tokens and place them into a bond. 
-- Bonds are used extensively and are contracts resembling machine-controlled escrow. 
-- If the users act in accordance with the Network’s rules and later wish to receive their bond back, they may do so. 
-- If the users do not act in accordance with the Network’s rules then they have a portion of their bond “slashed,” or reduced. 
-- Tokens also provide spam protection which would hurt the overall operation of the Network. 
-- NEED COMMENT ON COMSUMERS? 
+- The Agreements Network token is used by all participants.
+- For Producers, Testers, and Validators to participate they will have to buy tokens and place them into a bond.
+- Bonds are used extensively and are contracts resembling machine-controlled escrow.
+- If the users act in accordance with the Network’s rules and later wish to receive their bond back, they may do so.
+- If the users do not act in accordance with the Network’s rules then they have a portion of their bond “slashed,” or reduced.
+- Tokens also provide spam protection which would hurt the overall operation of the Network.
+- NEED COMMENT ON COMSUMERS?
 """
     [[section.item]]
         question = "When is your ICO?"
         answer = """
-No text yet
+Doing some learning...
 """
     [[section.item]]
         question = "When is your presale?"
