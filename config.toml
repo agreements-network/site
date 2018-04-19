@@ -137,8 +137,6 @@ canonifyURLs = true
       subtitle = "Increasing Margins through Functionality and Reproducability"
       description = "<p>Corporate governance (the rules and processes which control a company) is traditionally a meaty revenue stream for lawyers. The first stage in this essential business process is company incorporation or organization. The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance, thus unlocking further potential legal work.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
       
-      alt = "Corporate Governance"
-
     # [[params.usecases.item]]
     #   title = "Legal Template Producers"
     #   subtitle = "Making money building better legal operations"
