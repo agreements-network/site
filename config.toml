@@ -133,10 +133,8 @@ canonifyURLs = true
     [[params.usecases.item]]
       title = "Corporate Governance"
       subtitle = "Increasing Margins through Functionality and Reproducability"
-      description = "<p>Corporate governance, the system of rules and processes which control a company, is a significant workstream for lawyers. The beginning of this process is incorporation or organization of a company. Incorporation of a business is one of the most common processes in legal operations, with more than 250,000 new limited liability companies and corporations organizing each quarter in the United States alone. Articles of organization are a necessary dependency for most businesses - the first step to hiring an employee and opening a business bank account, for example.</p><p>The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance like bylaws, equity, and operations contracts.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
-      img = "agreements-network-diagram-05.png"
-      alt = "Corporate Governance"
-
+      description = "<p>Corporate governance (the rules and processes which control a company) is traditionally a meaty revenue stream for lawyers. The first stage in this essential business process is company incorporation or organization. The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance, thus unlocking further potential legal work.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
+      
     # [[params.usecases.item]]
     #   title = "Legal Template Producers"
     #   subtitle = "Making money building better legal operations"
@@ -157,7 +155,7 @@ canonifyURLs = true
     map = false
     form = true
     title = "Connect With The Ecosystem"
-    description = "The founders of the Agreements Network would love for you to join our growing ecosystem. Feel free to connect with us below to understand a bit more about the opportunities to join the ecosystem."
+    description = "The founders of The Agreements Network would love for you to join our growing ecosystem. Feel free to connect with us below to understand a bit more about the opportunities to join the ecosystem."
 
     subtitle = "Get In Touch"
 
