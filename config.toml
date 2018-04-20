@@ -108,7 +108,7 @@ canonifyURLs = true
 
     [[params.whitepaper.item]]
       title = "Download Our Whitepaper"
-      description = "The Agreements Network shifts the paradigm from bespoke legal services to scalable, repeatable legal products. The commoditization of legal services benefits both legal producers and the consumers of their services, via a secure token-based ecosystem.<br/><br/>The Agreements Network leverages the liquid expectation of digital service delivery lifting legal services onto the same playing field and making it an accessible tool.<br/><br/>Read our Whitepaper to learn more about how this is done."
+      description = "The Agreements Network is a prime opportunity to build a new legal layer in networked commerce, backed by the certainty of blockchain and smart contract-based evidence and processes. Lawyers with zero coding experience can combine their savvy, their clients’ needs and the Agreements Network to turn today’s legal problem into tomorrow’s market opportunity.<br/><br/>Read our Whitepaper to learn more about the technology and the use cases it enables."
       docimg = "AN-Whitepaper-cover.gif"
       button = "Read Whitepaper"
       url = "files/an_whitepaper_v1.0.pdf"
