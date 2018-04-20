@@ -122,7 +122,9 @@ canonifyURLs = true
       title = "Equipment Leasing - Fleets"
       subtitle = "Facilitating As-A-Service Business Models"
       description = "<p>In the evolving network economy, devices upgrade and proliferate quickly, resulting in a trend towards pay-per-use and leasing models and in deployments of fleets of equipment, for example, robotics like drones. To serve this market, agreements issues such as unit function history, ownership, payments, rights of use, maintenance and insurance may all be parameterized as workflows in the Agreements Network.</p>"
-
+      img = "fleet-lease.png"
+      alt = "Equipment Leasing - Fleets"
+      
      [[params.usecases.item]]
       title = "Content Creators"
       subtitle = "Earning Money While Protecting Content Rights"
@@ -134,7 +136,7 @@ canonifyURLs = true
       title = "Corporate Governance"
       subtitle = "Increasing Margins through Functionality and Reproducability"
       description = "<p>Corporate governance (the rules and processes which control a company) is traditionally a meaty revenue stream for lawyers. The first stage in this essential business process is company incorporation or organization. The Agreements Network provides value by creating a persistent record of the incorporation instrument, to anchor further smart contracts for corporate governance, thus unlocking further potential legal work.</p><img src='images/agreements-network-diagram-10.png' alt='Corporate Governance'>"
-      
+
     # [[params.usecases.item]]
     #   title = "Legal Template Producers"
     #   subtitle = "Making money building better legal operations"
