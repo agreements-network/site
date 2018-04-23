@@ -4,45 +4,46 @@
     [[section.item]]
         question = "Why do people want to enter into agreements at all?"
         answer = """
+
 - Certainty over whether an agreement was made
 - Clarity between parties about the specifics of what was agreed
-- Benefits/consideration agreed
-- Mechanisms/rules of transaction
-- Greater efficiency in resolving disputes
-- Enforceability - ambient legal structures allow the weak to trust the strong
+- Mutual understanding of performance obligations 
+- Greater efficiency in dispute resolution
+- Enforceability means increased confidence in business decisions
+
 """
 
     [[section.item]]
-        question = "Why do people (or other autonomous entities) stand to gain by entering into an agreement digitally?"
+        question = "What do people (or other autonomous entities) stand to gain by entering into an agreement digitally?"
         answer = """
-- Computable reference object (could drive automation elsewhere)
-- Cryptographic proof of agreement state (by parties timestamping, signing it, ordering it amongst other documents by hash-chaining)
+
+- Computable reference objects (with the capacity to drive automation elsewhere)
+- Cryptographic proof of agreement state (by parties timestamping, signing, and ordering it amongst other documents via hash-chaining
 - Security against loss
-- Interaction with other agreements (e.g. static hierarchical, or dynamic with respect to state change)
-- Updateability or freshness
+- Interoperability with other agreements (e.g. static, hierarchical, dynamic)
+- Tracking in real-time
 - Fulfilment logs and other event streams
+
 """
 
 [[section]]
     title = "Basics of Network"
 
     [[section.item]]
-        question = "What is the Agreements Network built on?"
+        question = "What is the Agreements Network architecture?"
         answer = """
-The Agreements Network is a hybrid solution that leverages interconnected distributed systems; specifically, it will utilize:
-- [Ethereum](https://www.ethereum.org/) public blockchain for the operation of the Agreement Network's token infrastructure
-- [Cosmos Hub](https://cosmos.network) -- a Proof-of-Stake blockchain to be launched by the Cosmos Network; it uses Tendermint consensus, contains a built-in governance protocol, and serves as coordinator for interoperability between other blockchains
-- [InterPlanetary File System](https://ipfs.io/) (IPFS) for storage of content
-- [Hyperledger Burrow’s](https://github.com/hyperledger/burrow) permissioned Ethereum Virtual Machine blockchain operates our Cosmos zone
-- Open source components and smart contracts built by Monax and others.
+The Agreements Network is a hybrid solution leveraging interconnected, distributed systems. The four systems at the core of the Agreements Network are: 
+1. [Ethereum](https://www.ethereum.org/) for the operation of the Agreement Network’s token infrastructure
+2. [Cosmos Hub](https://cosmos.network) is a Proof-of-Stake blockchain to be launched by the Cosmos Network. It incorporates the Tendermint consensus, contains a built-in governance protocol, and serves as coordinator for interoperability between other blockchains [InterPlanetary File System](https://ipfs.io/) (IPFS) for distributed storage of content
+3. [Hyperledger Burrow’s](https://github.com/hyperledger/burrow) is a permissioned Ethereum Virtual Machine blockchain that operates the Agreements Network’s Cosmos zone features, open-source components and smart contracts built by Monax and other developers Open source components and smart contracts built by Monax and others.
 """
     [[section.item]]
         question = "What is Cosmos?"
         answer = """
-- Cosmos is a network of blockchains whose purpose is to allow many sovereign and easy-to-develop blockchains to scale and interoperate with each other, creating an Internet of Blockchains.
-- The first blockchain in the Cosmos network is the Cosmos hub. The Cosmos hub connects to zones via the novel IBC (inter-blockchain communication) protocol and keeps a record of the total number of tokens in each zone.
-- The Cosmos Hub can connect to many different kinds of zones - public or private - as long as each zone speaks IBC. Tendermint-based Zones are natively compatible with IBC, but any fast-finality consensus algorithm can be used as a replacement.
-- [See more at the Cosmos site](https://cosmos.network/intro)
+Cosmos is a network of blockchains which facilitate sovereign and easy-to-develop blockchains to scale, and with interoperability, thus creating an Internet of Blockchains 
+
+The Cosmos Hub can connect to myriad  zones - public or private - as long as each zone communicates via theInter-Blockchain Communication (“IBC”) protocol. Tendermint-based zones are natively compatible with IBC, but any fast-finality consensus algorithm can be used as a replacement.
+For more details please visit the [the Cosmos site](https://cosmos.network/intro)
 """
     [[section.item]]
         question = "Why is the Agreements Network not built on Ethereum?"
@@ -79,9 +80,10 @@ The Agreemeents Network will allow
     [[section.item]]
         question = "I'm a smart contract developer, how can I build things for the Agreements Network?"
         answer = """
-- Develop features not organic to the Agreements Network
-- Extend the network of capabilities on top of the Agreements Network
-- Create contract templates and contracts
+- Develop features unique to the Agreements Network
+- Extend the network of capabilities on top of the Agreements Network protocol
+- Create contract templates and further contracts
+
 """
     [[section.item]]
         question = "I'm a service provider for various ethereum systems, how can I integrate my services into the Agreements Network?"
@@ -97,41 +99,40 @@ The Agreemeents Network will allow
     [[section.item]]
         question = "Why do you have a token?"
         answer = """
-A token is used to assure the operational backbone for the Agreements Network within the proof of stake decentralized consensus mechanism. Also, a token was needed to prevent cheating and prevent spamming / security concerns among participants on the network.
+Tokens are used to assure the operational backbone for the Agreements Network within the proof of stake decentralized consensus mechanism. In addition,  a tokenized system offers protection against cheating and  spamming, enhancing network security
 """
     [[section.item]]
-        question = "What does your token do?"
+        question = "What does the Agreement's Network token do?"
         answer = """
-- The Agreements Network token is used by all participants.
-- For Producers, Testers, and Validators to participate they will have to buy tokens and place them into a bond.
-- Bonds are used extensively and are contracts resembling machine-controlled escrow.
-- If the users act in accordance with the Network’s rules and later wish to receive their bond back, they may do so.
-- If the users do not act in accordance with the Network’s rules then they have a portion of their bond “slashed,” or reduced.
-- Tokens also provide spam protection which would hurt the overall operation of the Network.
-- NEED COMMENT ON COMSUMERS?
+- The Agreements Network token is used by all participants to enhance the trust and credibility of the system
+- Producers, Testers, and Validators buy tokens and place them into a bond. These are used extensively - they are contracts similar to machine-controlled escrow systems
+- If users act in accordance with the Network’s rules and later wish to recover their bonds, they may do so
+- If users do not act in accordance with the Network’s rules then they have a portion of their bond “slashed,” or reduced
+- Tokens also provide spam protection to protect the overall operation of the Network
+
 """
     [[section.item]]
         question = "When is your ICO?"
         answer = """
-Doing some learning...
+We will be announcing this here soon...
 """
     [[section.item]]
         question = "When is your presale?"
         answer = """
-Now
+We will be announcing this here soon...
 """
     [[section.item]]
         question = "What is the distribution of the token on network launch?"
         answer = """
-No text yet
+We will be announcing this here soon...
 """
     [[section.item]]
         question = "What will the price of the token be in 1, 3, 5 years?"
         answer = """
-No text yet
+We will be announcing this here soon...
 """
     [[section.item]]
         question = "I'm a US based token purchaser, can I buy your token?"
         answer = """
-No text yet
+We will be announcing this here soon...
 """
