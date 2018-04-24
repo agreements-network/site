@@ -20,13 +20,13 @@
 - Cryptographic proof of agreement state (by parties timestamping, signing, and ordering it amongst other documents via hash-chaining
 - Security against loss
 - Interoperability with other agreements (e.g. static, hierarchical, dynamic)
-- Tracking in real-tim
+- Tracking in real-time
 - Fulfilment logs and other event streams
 
 """
 
 [[section]]
-    title = "Basics of Network"
+    title = "Basics of the Network"
 
     [[section.item]]
         question = "What is the Agreements Network built on?"
@@ -37,33 +37,25 @@ The Agreements Network is a hybrid solution leveraging interconnected, distribut
 3. [InterPlanetary File System](https://ipfs.io/) (IPFS) for storage of content
 4. [Hyperledger Burrow’s](https://github.com/hyperledger/burrow) permissioned Ethereum Virtual Machine blockchain operates our Cosmos zone
 - Open source components and smart contracts built by Monax and others.
+
 """
     [[section.item]]
         question = "What is Cosmos?"
         answer = """
-- Cosmos is a network of blockchains whose purpose is to allow many sovereign and easy-to-develop blockchains to scale and interoperate with each other, creating an Internet of Blockchains.
-- The first blockchain in the Cosmos network is the Cosmos hub. The Cosmos hub connects to zones via the novel IBC (inter-blockchain communication) protocol and keeps a record of the total number of tokens in each zone.
-- The Cosmos Hub can connect to many different kinds of zones - public or private - as long as each zone speaks IBC. Tendermint-based Zones are natively compatible with IBC, but any fast-finality consensus algorithm can be used as a replacement.
-- [See more at the Cosmos site](https://cosmos.network/intro)
+Cosmos is a network of blockchains which facilitate sovereign and easy-to-develop blockchains to scale, and with interoperability, thus creating an Internet of Blockchains
+
+The Cosmos Hub can connect to myriad zones - public or private - as long as each zone communicates via theInter-Blockchain Communication (“IBC”) protocol. Tendermint-based zones are natively compatible with IBC, but any fast-finality consensus algorithm can be used as a replacement For more details please visit (https://cosmos.network/intro)
+
 """
-    [[section.item]]
-        question = "Why is the Agreements Network not built on Ethereum?"
-        answer = """
-- The decision to not build on Ethereum was chosen in order to allow the Agreements Network to be in the most advantageous position to allow for contribution and collaboration across the ecosystem while promoting interoperability across networks.
-- Monax's history has been in the development of ecosystem applications and tools. The open-sourced Monax platform, Hyperleder Burrow (ethereum virtual machine), and smart contract-based SKDs are a few examples of this.
-- Grow ecosystem applications and tools
-- To allow for scaling by businesses who desire a permissioned network
-- Allow for the collaboration across applications
-"""
+
     [[section.item]]
         question = "What is the permissioning model of the Agreements Network?"
         answer = """
-The Agreements Network is a public, permissioned blockchain design. This means that for most of the users most of the time that it operates the same way as public unpermissioned blockchain networks operate. However, in order to optimize the blockchain for the use case of contract management, the founders have put in place a governance system around new smart contracts that are added to the blockchain. Because the protocol is built to be a no-code solution for almost all participants it is actually rarely the case that a user will need to add new smart contracts to the blockchain. We do not **prohibit** new smart contracts being added to the chain, however. We will be leveraging the permissioning system of Hyperledger Burrow to allow any one to *propose* new smart contracts get added to the network. These proposals are voted on by the validators. If successful, then the smart contracts are added to the chain. If unsuccessful they are not.
-"""
-    [[section.item]]
-        question = "How do I become a validator of the Agreements Network?"
-        answer = """
-The Agreemeents Network will allow
+The Agreements Network is a public, permissioned blockchain design. This means that for most of the users most of the time that it operates the same way as public unpermissioned blockchain networks operate. However, in order to optimize the blockchain for the use case of contract management, the founders have put in place a governance system around new smart contracts that are added to the blockchain
+Because the protocol is built to be a no-code solution for almost all participants it is rarely the case that a user will need to add new smart contracts to the blockchain
+We do not prohibit new smart contracts being added to the chain, however. We will be leveraging the permissioning system of Hyperledger Burrow to allow any one to propose new smart contracts get added to the network
+These proposals are voted on by the Validators - if successful, then the smart contracts are added to the chain, if unsuccessful they are not.
+
 """
 
 [[section]]
@@ -72,11 +64,11 @@ The Agreemeents Network will allow
     [[section.item]]
         question = "I'm a lawyer, how can I make money by using the Agreements Network?"
         answer = """
-- As an Archetype producer to create and upload Archetypes (legal prose plus smart contract workflows) of Active Agreements.
+- As an Archetype producer to create and upload Archetypes (legal prose plus smart contract workflows) of Active Agreements
 - Archetype producers do not need to have coding skills.
-- Archetype producers earn a usage fee when an Active Agreement is created within the Network based on their activities.
-- As a Tester by providing verification of the suitability for purpose of Archetypes uploaded to the Agreements Network.
-- Providing attestations, Testers earn fees when an Active Agreement is created within the Network based on their activities.
+- Archetype producers earn a usage fee when an Active Agreement is created within the network based on their activities
+- As a Tester by providing verification of the suitability for purpose of Archetypes uploaded to the Agreements Network
+- Providing attestations, Testers earn fees when an Active Agreement is created within the network based on their activities
 """
     [[section.item]]
         question = "I'm a smart contract developer, how can I build things for the Agreements Network?"
@@ -89,8 +81,7 @@ The Agreemeents Network will allow
         question = "I'm a service provider for various ethereum systems, how can I integrate my services into the Agreements Network?"
         answer = """
 - Connect solutions linked to the vital commercial data contained within the Agreements Network.
-- Build applications that use the Agreements Network's APIs.
-- Fulfill functions not native to the Agreements Network
+- Build applications that use the Agreements Network's APIs
 """
 
 [[section]]
@@ -99,41 +90,25 @@ The Agreemeents Network will allow
     [[section.item]]
         question = "Why do you have a token?"
         answer = """
-A token is used to assure the operational backbone for the Agreements Network within the proof of stake decentralized consensus mechanism. Also, a token was needed to prevent cheating and prevent spamming / security concerns among participants on the network.
+A token is used to assure the operational backbone for the Agreements Network within the proof of stake decentralized consensus mechanism
+A tokenized system offers protection against cheating and spamming, enhancing network security
 """
+
     [[section.item]]
-        question = "What does your token do?"
+        question = "What does the Agreements Network token do?"
         answer = """
-- The Agreements Network token is used by all participants
-- For Producers, Testers, and Validators to participate they will have to buy tokens and place them into a bond.
-- Bonds are used extensively and are contracts resembling machine-controlled escrow
-- If the users act in accordance with the Network’s rules and later wish to receive their bond back, they may do so.
-- If the users do not act in accordance with the Network’s rules then they have a portion of their bond “slashed,” or reduced.
-- Tokens also provide spam protection which would hurt the overall operation of the Network
-- NEED COMMENT ON COMSUMERS?
+The Agreements Network token is used by all participants to enhance the trust and credibility of the system
+Producers, Testers, and Validators buy tokens and place them into a bond. These are used extensively - they are contracts similar to machine-controlled escrow systems
+If users act in accordance with the Network’s rules and later wish to recover their bonds, they may do so
+Tokens also provide spam protection to protect the overall operation of the Network
 """
     [[section.item]]
         question = "When is your ICO?"
         answer = """
-Doing some learning...
+We will be announcing this here soon…
 """
     [[section.item]]
         question = "When is your presale?"
         answer = """
-Now
-"""
-    [[section.item]]
-        question = "What is the distribution of the token on network launch?"
-        answer = """
-No text yet
-"""
-    [[section.item]]
-        question = "What will the price of the token be in 1, 3, 5 years?"
-        answer = """
-No text yet
-"""
-    [[section.item]]
-        question = "I'm a US based token purchaser, can I buy your token?"
-        answer = """
-No text yet
+We will be announcing this here soon…
 """
