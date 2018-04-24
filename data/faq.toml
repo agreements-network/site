@@ -6,21 +6,23 @@
         answer = """
 - Certainty over whether an agreement was made
 - Clarity between parties about the specifics of what was agreed
-- Benefits/consideration agreed
-- Mechanisms/rules of transaction
-- Greater efficiency in resolving disputes
-- Enforceability - ambient legal structures allow the weak to trust the strong
+- Mutual understanding of performance obligations
+- Greater efficiency in dispute resolution
+- Enforceability means increased confidence in business decisions
+
 """
 
     [[section.item]]
-        question = "Why do people (or other autonomous entities) stand to gain by entering into an agreement digitally?"
+        question = "What do people (or other autonomous entities) stand to gain by entering into an agreement digitally?"
         answer = """
-- Computable reference object (could drive automation elsewhere)
-- Cryptographic proof of agreement state (by parties timestamping, signing it, ordering it amongst other documents by hash-chaining)
+
+- Computable reference objects (with the capacity to drive automation elsewhere)
+- Cryptographic proof of agreement state (by parties timestamping, signing, and ordering it amongst other documents via hash-chaining
 - Security against loss
-- Interaction with other agreements (e.g. static hierarchical, or dynamic with respect to state change)
-- Updateability or freshness
+- Interoperability with other agreements (e.g. static, hierarchical, dynamic)
+- Tracking in real-tim
 - Fulfilment logs and other event streams
+
 """
 
 [[section]]
@@ -29,11 +31,11 @@
     [[section.item]]
         question = "What is the Agreements Network built on?"
         answer = """
-The Agreements Network is a hybrid solution that leverages interconnected distributed systems; specifically, it will utilize:
-- [Ethereum](https://www.ethereum.org/) public blockchain for the operation of the Agreement Network's token infrastructure
-- [Cosmos Hub](https://cosmos.network) -- a Proof-of-Stake blockchain to be launched by the Cosmos Network; it uses Tendermint consensus, contains a built-in governance protocol, and serves as coordinator for interoperability between other blockchains
-- [InterPlanetary File System](https://ipfs.io/) (IPFS) for storage of content
-- [Hyperledger Burrow’s](https://github.com/hyperledger/burrow) permissioned Ethereum Virtual Machine blockchain operates our Cosmos zone
+The Agreements Network is a hybrid solution leveraging interconnected, distributed systems. The four systems at the core of the Agreements Network are:
+1. [Ethereum](https://www.ethereum.org/) for the operation of the Agreement Network’s token infrastructure
+2. [Cosmos Hub](https://cosmos.network) -- a Proof-of-Stake blockchain to be launched by the Cosmos Network; it uses Tendermint consensus, contains a built-in governance protocol, and serves as coordinator for interoperability between other blockchains
+3. [InterPlanetary File System](https://ipfs.io/) (IPFS) for storage of content
+4. [Hyperledger Burrow’s](https://github.com/hyperledger/burrow) permissioned Ethereum Virtual Machine blockchain operates our Cosmos zone
 - Open source components and smart contracts built by Monax and others.
 """
     [[section.item]]
@@ -102,12 +104,12 @@ A token is used to assure the operational backbone for the Agreements Network wi
     [[section.item]]
         question = "What does your token do?"
         answer = """
-- The Agreements Network token is used by all participants.
+- The Agreements Network token is used by all participants
 - For Producers, Testers, and Validators to participate they will have to buy tokens and place them into a bond.
-- Bonds are used extensively and are contracts resembling machine-controlled escrow.
+- Bonds are used extensively and are contracts resembling machine-controlled escrow
 - If the users act in accordance with the Network’s rules and later wish to receive their bond back, they may do so.
 - If the users do not act in accordance with the Network’s rules then they have a portion of their bond “slashed,” or reduced.
-- Tokens also provide spam protection which would hurt the overall operation of the Network.
+- Tokens also provide spam protection which would hurt the overall operation of the Network
 - NEED COMMENT ON COMSUMERS?
 """
     [[section.item]]
