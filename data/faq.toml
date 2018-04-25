@@ -89,7 +89,7 @@ The Agreements Network is a hybrid solution leveraging interconnected, distribut
     [[section.item]]
         question = "What does the Agreements Network token do?"
         answer = """
-- Producers, Testers, and Validators buy tokens and place them into a bond.
+- Producers, Testers, and Validators buy tokens and place them into a bond
 - Token bonds are used extensively - they are contracts similar to machine-controlled escrow systems
 - If users act in accordance with the Network’s rules and later wish to recover their bonds, they are free to do so
 - Tokens also provide spam protection to protect the overall operation of the Network
@@ -97,10 +97,12 @@ The Agreements Network is a hybrid solution leveraging interconnected, distribut
     [[section.item]]
         question = "When is your ICO?"
         answer = """
-We will be announcing this here soon… button = "Subscribe To Updates"
+We will be announcing this here soon…
+button = "Subscribe To Updates"
 """
     [[section.item]]
         question = "When is your presale?"
         answer = """
-We will be announcing this here soon… button = "Subscribe To Updates"
+We will be announcing this here soon…
+button = "Subscribe To Updates"
 """
