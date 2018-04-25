@@ -4,6 +4,7 @@
     [[section.item]]
         question = "Why do people want to enter into agreements at all?"
         answer = """
+
 - Certainty over whether an agreement was made
 - Clarity between parties about the specifics of what was agreed
 - Mutual understanding of performance obligations
@@ -19,13 +20,14 @@
 - Interoperability with other agreements (e.g. static, hierarchical, dynamic)
 - Tracking in real-time
 - Fulfilment logs and other event streams
+
 """
 
 [[section]]
     title = "Basics of the network"
 
     [[section.item]]
-        question = "What is the Agreements Network built on?"
+        question = "What is the Agreements Network architecture?"
         answer = """
 The Agreements Network is a hybrid solution leveraging interconnected, distributed systems. The four systems at the core of the Agreements Network are:
 1. [Ethereum](https://www.ethereum.org/) for the operation of the Agreement Network’s token infrastructure
@@ -66,9 +68,10 @@ The Agreements Network is a hybrid solution leveraging interconnected, distribut
     [[section.item]]
         question = "I'm a smart contract developer, how can I build things for the Agreements Network?"
         answer = """
-- Develop features not organic to the Agreements Network
-- Extend the network of capabilities on top of the Agreements Network
-- Create contract templates and contracts
+- Develop features unique to the Agreements Network
+- Extend the network of capabilities on top of the Agreements Network protocol
+- Create contract templates and further contracts
+
 """
     [[section.item]]
         question = "I'm a service provider for various ethereum systems, how can I integrate my services into the Agreements Network?"
