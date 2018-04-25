@@ -42,19 +42,12 @@ The Agreements Network is a hybrid solution leveraging interconnected, distribut
 - For more details please visit (https://cosmos.network/intro)
 """
     [[section.item]]
-        question = "How do I become a validator of the Agreements Network?"
-        answer = """
-- The Agreements Network does not prohibit the addition of new smart contracts by any user, however, it leverages the permissioning system of Hyperledger Burrow to manage proposals for new additions to the networks
-- These proposals are voted on by the validators
-- If successful, then the smart contracts are added to the chain
-"""
-    [[section.item]]
         question = "What is the permissioning model of the Agreements Network?"
         answer = """
 - The Agreements Network is a public, permissioned blockchain design, meaning that for most of the users most of the time it operates in the same way as a public unpermissioned blockchain network
 - In order to optimize the blockchain for contract management purposes, the founders have put in place a governance system around new smart contracts that are added to the blockchain
 - Because the protocol is built to be a no-code solution for almost all participants it is rarely the case that a user will need to add new smart contracts to the blockchain
-- We don't prohibit new smart contracts being added to the chain, however, we will be leveraging the permissioning system of Hyperledger Burrow to allow anyone to propose that new smart contracts get added to the network
+- We don't prohibit new smart contracts being added to the chain, however, we will be leveraging the permissioning system of Hyperledger Burrow to enable anyone to propose the addition of new smart contracts to the network
 - These proposals are voted on by the Validators - if successful, then the smart contracts are added to the chain, if unsuccessful they are not
 """
 
