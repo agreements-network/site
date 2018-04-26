@@ -10,10 +10,12 @@
 - Mutual understanding of performance obligations
 - Greater efficiency in dispute resolution
 - Enforceability means increased confidence in business decisions
+
 """
     [[section.item]]
         question = "What do people (or other autonomous entities) stand to gain by entering into an agreement digitally?"
         answer = """
+
 - Computable reference objects (with the capacity to drive automation elsewhere)
 - Cryptographic proof of agreement state (by parties timestamping, signing, and ordering it amongst other documents via hash-chaining
 - Security against loss
@@ -29,28 +31,35 @@
     [[section.item]]
         question = "What is the Agreements Network architecture?"
         answer = """
+
 The Agreements Network is a hybrid solution leveraging interconnected, distributed systems. The four systems at the core of the Agreements Network are:
+
 1. [Ethereum](https://www.ethereum.org/) for the operation of the Agreement Network’s token infrastructure
 2. [Cosmos Hub](https://cosmos.network) -- a Proof-of-Stake blockchain to be launched by the Cosmos Network; it uses Tendermint consensus, contains a built-in governance protocol, and serves as coordinator for interoperability between other blockchains
 3. [InterPlanetary File System](https://ipfs.io/) (IPFS) for storage of content
 4. [Hyperledger Burrow’s](https://github.com/hyperledger/burrow) permissioned Ethereum Virtual Machine (EVM) blockchain operates our Cosmos zone
 - Open source components and smart contracts built by Monax and others.
+
 """
     [[section.item]]
         question = "What is Cosmos?"
         answer = """
+
 - Cosmos is a network of blockchains which facilitate sovereign and easy-to-develop blockchains to scale, and with interoperability, thus creating an Internet of Blockchains
 - The Cosmos Hub can connect to myriad zones - public or private - as long as each zone communicates via the Inter-Blockchain Communication (“IBC”) protocol. Tendermint-based zones are natively compatible with IBC, but any fast-finality consensus algorithm can be used as a replacement.
 - For more details please visit (https://cosmos.network/intro)
+
 """
     [[section.item]]
         question = "What is the permissioning model of the Agreements Network?"
         answer = """
+
 - The Agreements Network is a public, permissioned blockchain design, meaning that for most of the users most of the time it operates in the same way as a public unpermissioned blockchain network
 - In order to optimize the blockchain for contract management purposes, the founders have put in place a governance system around new smart contracts that are added to the blockchain
 - Because the protocol is built to be a no-code solution for almost all participants it is rarely the case that a user will need to add new smart contracts to the blockchain
 - We don't prohibit new smart contracts being added to the chain, however, we will be leveraging the permissioning system of Hyperledger Burrow to enable anyone to propose the addition of new smart contracts to the network
 - These proposals are voted on by the Validators - if successful, then the smart contracts are added to the chain, if unsuccessful they are not
+
 """
 
 [[section]]
@@ -59,15 +68,18 @@ The Agreements Network is a hybrid solution leveraging interconnected, distribut
     [[section.item]]
         question = "I'm a lawyer, how can I make money by using the Agreements Network?"
         answer = """
+
 - As an Archetype Producer to create and upload Archetypes (legal prose plus smart contract workflows) of Active Agreements
 - Archetype Producers don't need to have coding skills
 - Archetype Producers earn a usage fee when an Active Agreement is created within the network based on their activities
 - As a Tester by providing verification of the suitability for purpose (attestation) of an Archetype uploaded to the Agreements Network
 - Testers earn fees when an Active Agreement is created within the network based on their activities
+
 """
     [[section.item]]
         question = "I'm a smart contract developer, how can I build things for the Agreements Network?"
         answer = """
+
 - Develop features unique to the Agreements Network
 - Extend the network of capabilities on top of the Agreements Network protocol
 - Create contract templates and further contracts
@@ -76,8 +88,10 @@ The Agreements Network is a hybrid solution leveraging interconnected, distribut
     [[section.item]]
         question = "I'm a service provider for various ethereum systems, how can I integrate my services into the Agreements Network?"
         answer = """
+
 - Connect solutions linked to the vital commercial data contained within the Agreements Network
 - Build applications that use the Agreements Network's APIs
+
 """
 
 [[section]]
@@ -86,26 +100,30 @@ The Agreements Network is a hybrid solution leveraging interconnected, distribut
     [[section.item]]
         question = "Why do you have a token?"
         answer = """
+
 - A token system is used to assure the operational backbone for the Agreements Network within the proof of stake decentralized consensus mechanism
 - A tokenized system offers protection against cheating and spamming, enhancing network security
+
 """
     [[section.item]]
         question = "What does the Agreements Network token do?"
         answer = """
+
 - Producers, Testers, and Validators buy tokens and place them into a bond
 - Token bonds are used extensively - they are contracts similar to machine-controlled escrow systems
 - If users act in accordance with the Network’s rules and later wish to recover their bonds, they are free to do so
 - Tokens also provide spam protection to protect the overall operation of the Network
+
 """
     [[section.item]]
         question = "When is your ICO?"
         answer = """
-We will be announcing this here soon…
-button = "Subscribe To Updates"
+We will be announcing this here soon…<br/>
+[Subscribe To Updates](#mc_embed_signup_scroll)
 """
     [[section.item]]
         question = "When is your presale?"
         answer = """
-We will be announcing this here soon…
-button = "Subscribe To Updates"
+We will be announcing this here soon…<br/>
+[Subscribe To Updates](#mc_embed_signup_scroll)
 """
