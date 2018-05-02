@@ -16,6 +16,27 @@
 	<!-- Main JavaScript -->
 	<script src="js/main.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script>
+		$('#contact-form').submit(function () {
+			var formdata = $(this).serialize();
+			$.ajax({
+					url: 'https://analytics.monax.io/mailinglist',
+			    type: 'POST',
+					crossDomain: true,
+			    data: formdata,
+	        success: function (data) {
+            $('#contact-form-wrapper').slideUp('fast', function() {
+							$('#contact-form-success').append( "<p>Thanks for registering</p>" );
+						});
+	        },
+	        error: function (err) {
+	          console.log('Error submitting form: ' + err);
+						$('#contact-form')[0].reset();
+	        }
+			 });
+			return false;
+		});
+	</script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91240938-2"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
