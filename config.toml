@@ -165,7 +165,7 @@ canonifyURLs = true
 
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-speech", "<a href='https://t.me/joinchat/INVnsxJsQmqPhizrhiqDnA' target='_blank'>telegram</a>"],
+        ["icon-speech", "<a href='https://t.me/Agreements_Network' target='_blank'>telegram</a>"],
         ["icon-envelope", "<a href='mailto:join@agreements.network' alt='join@agreements.network'>join@agreements.network</a>"],
         # ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
         # ["icon-youtube", "<a href='http://www.youtube.com/c/MonaxIndustries ' target='_blank'>@monaxindustries</a>"]
