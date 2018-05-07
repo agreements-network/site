@@ -11,7 +11,7 @@ canonifyURLs = true
 
   # Meta
   author = "The Agreements Network Authors"
-  description = "A Decentralized Contract Management solution for small businesses."
+  description = "The legal layer for a networked world"
   email = "join@agreements.network"
 
   # Navigation
@@ -99,7 +99,7 @@ canonifyURLs = true
 
     [[params.overview.col2]]
       title = "The Solution"
-      description = "The Agreements Network is built to enable new and more efficient forms of reaching agreement via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services into legal products. It uses blockchain and smart contracts technologies to provide consumers with a real-time view on their obligations. Active Agreements allow businesses to visualize their risk in a compelling way."
+      description = "The Agreements Network is built to enable new and more efficient forms of operating agreements via decentralised, distributed systems. It provides a technical platform enabling lawyers to productise their previously bespoke services. It uses blockchain and smart contracts technologies to provide consumers with a real-time view on their obligations. Active Agreements on the network allow businesses to visualize their risk in a compelling way."
 
 
   # Whitepaper section
@@ -165,7 +165,7 @@ canonifyURLs = true
 
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-speech", "<a href='https://t.me/joinchat/INVnsxJsQmqPhizrhiqDnA' target='_blank'>telegram</a>"],
+        ["icon-speech", "<a href='https://t.me/Agreements_Network' target='_blank'>telegram</a>"],
         ["icon-envelope", "<a href='mailto:join@agreements.network' alt='join@agreements.network'>join@agreements.network</a>"],
         # ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
         # ["icon-youtube", "<a href='http://www.youtube.com/c/MonaxIndustries ' target='_blank'>@monaxindustries</a>"]

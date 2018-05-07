@@ -5,8 +5,8 @@
 					<h2 class="">{{ with .Site.Params.contact.title }}{{ . | markdownify }}{{ end }}</h2>
 					{{ with .Site.Params.contact.description }}
 					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext ">
-							<h3>{{ . | markdownify }}</h3>
+						<div class="col-md-10 col-md-offset-1 subtext ">
+							<h3 class="sm">{{ . | markdownify }}</h3>
 						</div>
 					</div>
 					{{ end }}
@@ -23,50 +23,29 @@
 				</div>
 				{{ if .Site.Params.contact.form }}
 				<div class="col-sm-6">
-					<!-- Begin MailChimp Signup Form -->
-					<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-					<div id="mc_embed_signup">
-					   <form action="https://monax.us11.list-manage.com/subscribe/post?u=5b6bb0eef367da61ed27cf5c3&amp;id=0b434f90b4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					      <div id="mc_embed_signup_scroll">
-					         <div class="mc-field-group">
-					         	{{ with .Site.Params.contact.email }}
-					            <label for="mce-EMAIL" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
-					            </label>
-					            <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="{{ . }} *" type="text">
-					            {{ end }}
-					         </div>
-					         <div class="mc-field-group">
-					         	{{ with .Site.Params.contact.fname }}
-					            <label for="mce-FNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
-					            </label>
-					            <input type="text" value="" name="FNAME" class="required fname form-control" id="mce-FNAME" placeholder="{{ . }} *" type="text">
-					            {{ end }}
-					         </div>
-					         <div class="mc-field-group">
-					         	{{ with .Site.Params.contact.lname }}
-					            <label for="mce-LNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
-					            </label>
-					            <input type="text" value="" name="LNAME" class="required lname form-control" id="mce-LNAME" placeholder="{{ . }} *" type="text">
-					            {{ end }}
-					         </div>
-					         <input type="hidden" class="mc-field-group input-group" name="group[18981]" value="2" id="mce-group[18981]-18981-2">
-					         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-					         <div id="mce-responses" class="clear">
-					            <div class="response" id="mce-error-response" style="display:none"></div>
-					            <div class="response" id="mce-success-response" style="display:none"></div>
-					         </div>
-					         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					         <div style="position: absolute; left: -5000px;" aria-hidden="true">
-					         	<input type="text" name="b_5b6bb0eef367da61ed27cf5c3_0b434f90b4" tabindex="-1" value="">
-					         </div>
-					         <div class="clear">
-					         	<input type="submit" value="{{ .Site.Params.contact.button | markdownify }}" name="subscribe" id="_mc-embedded-subscribe" class="btn btn-primary">
-					         </div>
-					      </div>
+					<div id="contact-form-wrapper">
+					   <form id="contact-form">
+			         	{{ with .Site.Params.contact.email }}
+		            <label for="EMAIL" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
+		            </label>
+		            <input type="email" value="" name="EMAIL" class="required email form-control" id="EMAIL" placeholder="{{ . }} *" type="text">
+		            {{ end }}
+			         	{{ with .Site.Params.contact.fname }}
+		            <label for="FNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
+		            </label>
+		            <input type="text" value="" name="FNAME" class="required fname form-control" id="FNAME" placeholder="{{ . }} *" type="text">
+		            {{ end }}
+			         	{{ with .Site.Params.contact.lname }}
+		            <label for="LNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
+		            </label>
+		            <input type="text" value="" name="LNAME" class="required lname form-control" id="LNAME" placeholder="{{ . }} *" type="text">
+		            {{ end }}
+			         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+			         <input type="submit" value="{{ .Site.Params.contact.button | markdownify }}" name="subscribe" class="btn btn-primary">
 					   </form>
+					 </div>
+					 <div id="contact-form-success"></div>
 					</div>
-					<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-					<!--End mc_embed_signup-->
 				</div>
 				{{ end }}
 			</div>
