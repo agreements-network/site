@@ -6,7 +6,6 @@ stages:
 
 before_script:
 - git submodule init && git submodule update
-- echo $CI_BUILD_TOKEN | docker login --username gitlab-ci-token --password-stdin registry.code.monax.io
 
 variables:
   GCS_BUCKET: "sites.monax.io"
