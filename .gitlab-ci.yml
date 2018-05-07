@@ -1,4 +1,4 @@
-image: docker:17.09-git
+image: jguyomard/hugo-builder:0.40-extras
 
 stages:
 - build
@@ -9,12 +9,8 @@ before_script:
 - echo $CI_BUILD_TOKEN | docker login --username gitlab-ci-token --password-stdin registry.code.monax.io
 
 variables:
-  BUILD_DIR: "/build"
-  CLOUDSDK_BIN_PATH: "/root/google-cloud-sdk/bin"
-  CLOUDSDK_CORE_DISABLE_PROMPTS: "yes"
-  DOCKER_BUILD_IMAGE: "registry.code.monax.io/monax/agreements.network/site"
-  DOCKER_DRIVER: "overlay2"
   GCS_BUCKET: "sites.monax.io"
+  BUILD_DIR: "./build"
 
 # Variable packages
 .variables_staging: &vars_staging
@@ -32,53 +28,58 @@ variables:
 # Job templates
 .build_site_template: &build_template
   stage: build
-  services:
-  - docker:17.09-dind
   script:
-  - |
-    docker build \
-      --tag $DOCKER_BUILD_IMAGE:$CI_BUILD_REF_NAME \
-      --build-arg SITE_NAME=$SITE_NAME \
-      --build-arg BUILD_DIR=$BUILD_DIR `pwd`
-    docker push "$DOCKER_BUILD_IMAGE:$CI_BUILD_REF_NAME" &>/dev/null
-
-.deploy_template: &deploy_template
-  image:  $DOCKER_BUILD_IMAGE:$CI_BUILD_REF_NAME
-  stage: deploy
-  before_script:
-  - apk add --no-cache --update bash python
-  script:
-  - |
-    curl -sSL https://sdk.cloud.google.com | bash &>/dev/null
-    # [csk] I know, I know, but you try it without.... ^^^
-    echo $GCS_CLIENT_SECRET_SITES > client-secret.json
-    $CLOUDSDK_BIN_PATH/gcloud auth activate-service-account --key-file client-secret.json
-    rm client-secret.json
-    $CLOUDSDK_BIN_PATH/gsutil -m \
-      rsync -r -d \
-      $BUILD_DIR gs://$GCS_BUCKET/$SITE_NAME
+    - |
+      hugo \
+        --verbose \
+        --destination=$BUILD_DIR \
+        --baseURL="https://$SITE_NAME" &&
+      minify \
+        --verbose \
+        --html-keep-document-tags \
+        --recursive \
+        --output \
+        $BUILD_DIR/ $BUILD_DIR/
+  artifacts:
+    paths:
+      - $BUILD_DIR
 
 # Build jobs
-build_site_staging:
+build staging:
   <<: *vars_staging
   <<: *build_template
 
-build_site_production:
+build production:
   <<: *vars_production
   <<: *build_template
 
+.deploy_template: &deploy_template
+  stage: deploy
+  image: quay.io/monax/monax:0.19.6-platform_deployer
+  before_script:
+    - |
+      echo $GCS_CLIENT_SECRET_SITES > client-secret.json
+      gcloud auth activate-service-account --key-file client-secret.json
+      rm client-secret.json
+  script:
+    - gsutil -m rsync -r -d build gs://$GCS_BUCKET/$SITE_NAME
+
 # Deploy jobs
-deploy_staging:
+deploy staging:
   environment:
     name: staging
     url: https://staging.agreements.network
+  dependencies:
+    - build staging
   <<: *vars_staging
   <<: *deploy_template
 
-deploy_production:
+deploy production:
   environment:
     name: production
     url: https://agreements.network
+  dependencies:
+    - build production
   <<: *vars_production
   <<: *deploy_template
 
