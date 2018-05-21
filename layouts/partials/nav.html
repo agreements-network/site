@@ -1,3 +1,8 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3F72VX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <header role="banner" id="fh5co-header" class="navbar-fixed-top fh5co-animated slideInDown">
         <div class="container">
             <!-- <div class="row"> -->
@@ -5,7 +10,7 @@
                 <div class="navbar-header">
                     <!-- Mobile Toggle Menu Button -->
                     <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-                    <a class="navbar-brand" href="/" data-nav-section="home"><img class="nav-logo" src="images/{{ .Site.Params.navigation.logo }}" alt="{{ .Site.Params.title }}"><!-- {{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }} --></a> 
+                    <a class="navbar-brand" href="/" data-nav-section="home"><img class="nav-logo" src="images/{{ .Site.Params.navigation.logo }}" alt="{{ .Site.Params.title }}"><!-- {{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }} --></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
@@ -15,25 +20,25 @@
                     {{ end }}
 
                     <li class="active"><a href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span></a></li>
-                    
+
                     {{ if .Site.Params.overview.enable }}
-                    <li><a href="#" data-nav-section="overview"><span>{{ with .Site.Params.navigation.overview }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    <li><a href="#" data-nav-section="overview"><span>{{ with .Site.Params.navigation.overview }}{{ . | markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ if .Site.Params.whitepaper.enable }}
-                    <li><a href="#" data-nav-section="whitepaper"><span>{{ with .Site.Params.navigation.whitepaper }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    <li><a href="#" data-nav-section="whitepaper"><span>{{ with .Site.Params.navigation.whitepaper }}{{ . | markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ if .Site.Params.usecases.enable }}
-                    <li><a href="#" data-nav-section="usecases"><span>{{ with .Site.Params.navigation.usecases }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    <li><a href="#" data-nav-section="usecases"><span>{{ with .Site.Params.navigation.usecases }}{{ . | markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ if .Site.Params.faq.enable }}
-                    <li><a href="#" data-nav-section="faq"><span>{{ with .Site.Params.navigation.faq }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    <li><a href="#" data-nav-section="faq"><span>{{ with .Site.Params.navigation.faq }}{{ . | markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ if .Site.Params.contact.enable }}
-                    <li><a href="#" data-nav-section="contact"><span>{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                    <li><a href="#" data-nav-section="contact"><span>{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</span></a></li>
                     {{ end }}
 
                     {{ range .Site.Menus.postpend }}
