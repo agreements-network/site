@@ -95,5 +95,5 @@ deploy production:
       cp -r build/* build-base
       cd build-base
       git add -A :/
-      git commit -m "Automatic document generation: $CI_COMMIT_SHA"
+      git commit -m "Automatic document generation: $CI_COMMIT_SHA" || true
       git push origin master
