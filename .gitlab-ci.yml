@@ -73,12 +73,33 @@ deploy staging:
   <<: *vars_staging
   <<: *deploy_template
 
-deploy production:
   environment:
     name: production
     url: https://agreements.network
-  dependencies:
-    - build production
   <<: *vars_production
   <<: *deploy_template
 
+# Deploy jobs
+deploy production:
+  stage: deploy
+  image: quay.io/monax/build:latest
+  dependencies:
+    - build production
+  only:
+    - production@success/agreements.network
+  before_script:
+    - |
+      eval $(ssh-agent -s) && \
+      echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null && \
+      mkdir -p $HOME/.ssh && chmod 700 $HOME/.ssh && \
+      echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config && \
+      git config --global user.name "Billings, a Bot" && \
+      git config --global user.email "billings@monax.io" && \
+      git clone git@github.com:agreements-network/site build-base
+  script:
+    - |
+      cp -r build build-base
+      cd build-base
+      git add -A :/
+      git commit -m "Automatic document generation: $CI_COMMIT_SHA"
+      git push origin master
