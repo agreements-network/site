@@ -54,7 +54,7 @@ build production:
 
 .deploy_template: &deploy_template
   stage: deploy
-  image: quay.io/monax/monax:0.19.6-platform_deployer
+  image: quay.io/monax/build:latest
   before_script:
     - |
       echo $GCS_CLIENT_SECRET_SITES > client-secret.json
