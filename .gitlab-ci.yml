@@ -92,7 +92,6 @@ deploy production:
       git clone git@github.com:agreements-network/site build-base
   script:
     - |
-      ls -la build
       cp -r build/* build-base
       cd build-base
       git add -A :/
