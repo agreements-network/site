@@ -24,39 +24,45 @@ defaults: &defaults
         command: |
           git submodule init
           git submodule update
-    - run:
-        name: Build site
-        command: |
-          hugo \
-            --verbose \
-            --destination=$BUILD_DIR \
-            --baseURL="https://$SITE_NAME" &&
-          minify \
-            --verbose \
-            --html-keep-document-tags \
-            --recursive \
-            --output \
-            $BUILD_DIR/ $BUILD_DIR/
+
+builder: &builder
+  run:
+    name: Build site
+    command: |
+      hugo \
+        --verbose \
+        --destination=$BUILD_DIR \
+        --baseURL="https://$SITE_NAME" &&
+      minify \
+        --verbose \
+        --html-keep-document-tags \
+        --recursive \
+        --output \
+        $BUILD_DIR/ $BUILD_DIR/
 
 jobs:
   build_and_deploy_staging:
+    <<: *defaults
     environment:
       SITE_NAME: "agreements.network"
-    <<: *defaults
+    steps:
+      - <<: *builder
       - run:
-        name: Merge to master
-        command: |
-          git clone git@github.com:agreements-network/site build-base
-          cp -r build/* build-base
-          cd build-base
-          git add -A :/
-          git commit -m "Automatic document generation: $CIRCLE_SHA1 [ci skip]" || true
-          git push origin master
+          name: Merge to master
+          command: |
+            git clone git@github.com:agreements-network/site build-base
+            cp -r build/* build-base
+            cd build-base
+            git add -A :/
+            git commit -m "Automatic document generation: $CIRCLE_SHA1 [ci skip]" || true
+            git push origin master
 
   build_and_deploy_prs:
+    <<: *defaults
     environment:
       SITE_NAME: "staging.agreements.network"
-    <<: *defaults
+    steps:
+      - <<: *builder
 
 workflows:
   version: 2
