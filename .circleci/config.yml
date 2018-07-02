@@ -3,42 +3,6 @@ version: 2
 defaults: &defaults
   docker:
     - image: jguyomard/hugo-builder:0.42-extras
-  steps:
-    - add_ssh_keys:
-        fingerprints:
-          - "85:ab:b4:40:4f:d2:cc:f2:6f:b0:70:bc:0d:4c:af:51"
-    - run:
-        name: Install git
-        command: |
-          apk add --no-cache --update git openssh-client
-    - run:
-        name: Configure git & ssh
-        command: |
-          mkdir -p $HOME/.ssh && chmod 700 $HOME/.ssh
-          echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > $HOME/.ssh/config
-          git config --global user.name "Billings, a Bot"
-          git config --global user.email "billings@monax.io"
-    - checkout
-    - run:
-        name: Repo setup
-        command: |
-          git submodule init
-          git submodule update
-
-builder: &builder
-  run:
-    name: Build site
-    command: |
-      hugo \
-        --verbose \
-        --destination=$BUILD_DIR \
-        --baseURL="https://$SITE_NAME" &&
-      minify \
-        --verbose \
-        --html-keep-document-tags \
-        --recursive \
-        --output \
-        $BUILD_DIR/ $BUILD_DIR/
 
 jobs:
   build_and_deploy_staging:
@@ -46,7 +10,44 @@ jobs:
     environment:
       SITE_NAME: "agreements.network"
     steps:
-      - <<: *builder
+      - &add_ssh_keys
+        add_ssh_keys:
+          fingerprints:
+            - "85:ab:b4:40:4f:d2:cc:f2:6f:b0:70:bc:0d:4c:af:51"
+      - &install_git
+        run:
+          name: Install git
+          command: |
+            apk add --no-cache --update git openssh-client
+      - &configure_git
+        run:
+          name: Configure git & ssh
+          command: |
+            mkdir -p $HOME/.ssh && chmod 700 $HOME/.ssh
+            echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > $HOME/.ssh/config
+            git config --global user.name "Billings, a Bot"
+            git config --global user.email "billings@monax.io"
+      - checkout
+      - &setup_git
+        run:
+          name: Repo setup
+          command: |
+            git submodule init
+            git submodule update
+      - &builder
+        run:
+          name: Build site
+          command: |
+            hugo \
+              --verbose \
+              --destination=$BUILD_DIR \
+              --baseURL="https://$SITE_NAME" &&
+            minify \
+              --verbose \
+              --html-keep-document-tags \
+              --recursive \
+              --output \
+              $BUILD_DIR/ $BUILD_DIR/
       - run:
           name: Merge to master
           command: |
@@ -62,6 +63,11 @@ jobs:
     environment:
       SITE_NAME: "staging.agreements.network"
     steps:
+      - <<: *add_ssh_keys
+      - <<: *install_git
+      - <<: *configure_git
+      - checkout
+      - <<: *setup_git
       - <<: *builder
 
 workflows:
