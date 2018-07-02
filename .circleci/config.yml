@@ -9,6 +9,7 @@ jobs:
     <<: *defaults
     environment:
       SITE_NAME: "agreements.network"
+      BUILD_DIR: "./build"
     steps:
       - &add_ssh_keys
         add_ssh_keys:
@@ -62,6 +63,7 @@ jobs:
     <<: *defaults
     environment:
       SITE_NAME: "staging.agreements.network"
+      BUILD_DIR: "./build"
     steps:
       - <<: *add_ssh_keys
       - <<: *install_git
