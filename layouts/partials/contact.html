@@ -13,10 +13,10 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-3 col-md-offset-5">
 					<ul class="fh5co-contact-info">
 					{{ range .Site.Params.contact.details }}
-						<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
+						<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i><h3 class="sm">{{ with index . 1}}{{ . | markdownify }}{{ end }}</h3></li>
 					{{ end }}
 					</ul>
 				</div>
