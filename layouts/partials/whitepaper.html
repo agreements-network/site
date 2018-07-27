@@ -14,7 +14,9 @@
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 whitepaper-text-container">
 						<h3>{{ .title | markdownify }}</h3>
 						<p>{{ .description | markdownify }}</p>
+					{{ range .languages }}
 						<a class="btn btn-primary" href="{{ .url }}">{{ .button }}</a>
+					{{ end }}
 					</div>
 					<div class="clearfix visible-sm-block"></div>
 				</div>

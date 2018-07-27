@@ -110,8 +110,14 @@ canonifyURLs = true
       title = "Download Our Whitepaper"
       description = "The Agreements Network is a prime opportunity to build a new legal layer in networked commerce, backed by the certainty of blockchain and smart contract-based evidence and processes. Lawyers with zero coding experience can combine their savvy, their clients’ needs and the Agreements Network to turn today’s legal problem into tomorrow’s market opportunity.<br/><br/>Read our Whitepaper to learn more about the technology and the use cases it enables."
       docimg = "AN-Whitepaper-cover.gif"
-      button = "Read Whitepaper"
-      url = "files/an_whitepaper_v1.0.pdf"
+
+      [[params.whitepaper.item.languages]]
+        button = "Read Whitepaper"
+        url = "files/an_whitepaper_v1.0.pdf"
+
+      [[params.whitepaper.item.languages]]
+        button = "Leer Libro Blanco"
+        url = "files/an_whitepaper_es_v1.0.pdf"
 
   # Use Cases section
   [params.usecases]
