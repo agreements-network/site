@@ -12,42 +12,14 @@
 					{{ end }}
 				</div>
 			</div>
-			<div class="row row-bottom-padded-md">
-				<div class="col-sm-6 ">
-					<h3 class="content-subheading left-border">{{ with .Site.Params.contact.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+			<div class="row">
+				<div class="col-md-12">
 					<ul class="fh5co-contact-info">
 					{{ range .Site.Params.contact.details }}
 						<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
 					{{ end }}
 					</ul>
 				</div>
-				{{ if .Site.Params.contact.form }}
-				<div class="col-sm-6">
-					<div id="contact-form-wrapper">
-					   <form id="contact-form">
-			         	{{ with .Site.Params.contact.email }}
-		            <label for="EMAIL" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
-		            </label>
-		            <input type="email" value="" name="EMAIL" class="required email form-control" id="EMAIL" placeholder="{{ . }} *" type="text">
-		            {{ end }}
-			         	{{ with .Site.Params.contact.fname }}
-		            <label for="FNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
-		            </label>
-		            <input type="text" value="" name="FNAME" class="required fname form-control" id="FNAME" placeholder="{{ . }} *" type="text">
-		            {{ end }}
-			         	{{ with .Site.Params.contact.lname }}
-		            <label for="LNAME" class="sr-only">{{ . | markdownify }}  <span class="asterisk">*</span>
-		            </label>
-		            <input type="text" value="" name="LNAME" class="required lname form-control" id="LNAME" placeholder="{{ . }} *" type="text">
-		            {{ end }}
-			         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-			         <input type="submit" value="{{ .Site.Params.contact.button | markdownify }}" name="subscribe" class="btn btn-primary">
-					   </form>
-					 </div>
-					 <div id="contact-form-success"></div>
-					</div>
-				</div>
-				{{ end }}
 			</div>
 		</div>
 		{{ if .Site.Params.contact.map }}

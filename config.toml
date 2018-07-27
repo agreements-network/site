@@ -19,14 +19,6 @@ canonifyURLs = true
     logo = "AgreementsNetwork_logo.png"
     brand = "Agreements Network"
 
-    # You can add custom links before or after the default links
-    # Assign a weight to define the order
-    # prepended links
-    #[[menu.prepend]]
-    #  url = "http://gohugo.io"
-    #  name = "Hugo"
-    #  weight = 10
-
     # home = "Home"
     overview = "Overview"
     whitepaper = "Whitepaper"
@@ -173,8 +165,6 @@ canonifyURLs = true
     details = [
         ["icon-envelope", "<a href='https://lists.agreements.network' alt='https://lists.agreements.network'>mailing lists</a>"],
         ["icon-speech", "<a href='https://t.me/Agreements_Network' target='_blank'>telegram</a>"],
-        # ["icon-twitter", '<a href="https://twitter.com/monaxHQ" target="_blank">@monaxHQ</a>'],
-        # ["icon-youtube", "<a href='http://www.youtube.com/c/MonaxIndustries ' target='_blank'>@monaxindustries</a>"]
       ]
 
     # Form labels
@@ -187,4 +177,3 @@ canonifyURLs = true
   [params.footer]
     enable = true
     copyright = '&copy; The Agreements Network Founders 2018. All Rights Reserved.'
-    # links = [] # same format as details section
