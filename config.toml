@@ -160,6 +160,11 @@ canonifyURLs = true
       link = "https://monax.io"
       img = "monax.png"
 
+    [[params.collaborators.row]]
+      title = "Partech"
+      link = "https://partechpartners.com/"
+      img = "partech.jpg"
+
   # Contact section
   [params.contact]
     enable = true
