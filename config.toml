@@ -151,6 +151,11 @@ canonifyURLs = true
     footertext = "These companies are not in a formal legal relationship of any kind."
 
     [[params.collaborators.row]]
+      title = "32 Advisors"
+      link = "http://32advisors.com"
+      img = "32_advisors.jpg"
+
+    [[params.collaborators.row]]
       title = "Anthemis"
       link = "https://www.anthemis.com"
       img = "anthemis.jpg"
@@ -162,7 +167,7 @@ canonifyURLs = true
 
     [[params.collaborators.row]]
       title = "Partech"
-      link = "https://partechpartners.com/"
+      link = "https://partechpartners.com"
       img = "partech.jpg"
 
   # Contact section
