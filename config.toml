@@ -150,6 +150,10 @@ canonifyURLs = true
     description = "Working together to launch the Agreements Network are..."
     footertext = "These companies are not in a formal legal relationship of any kind."
 
+    [[params.collaborators.row]]
+      title = "Monax"
+      img = "monax.png"
+
   # Contact section
   [params.contact]
     enable = true
