@@ -1,0 +1,35 @@
+	<section id="fh5co-collaborators" data-section="collaborators">
+		<div class="container container-padding-md">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="">{{ with .Site.Params.collaborators.title }}{{ . | markdownify }}{{ end }}</h2>
+					{{ with .Site.Params.collaborators.description }}
+					<div class="row">
+						<div class="col-md-10 col-md-offset-1 subtext ">
+							<h3 class="sm">{{ . | markdownify }}</h3>
+						</div>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+			{{ range .Site.Params.collaborators.row }}
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/collaborators/{{ .img }}" class="fh5co-project-item image-popup">
+						<img src="images/collaborators/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>{{ .title }}</h2>
+						<span>{{ .subtitle }}</span>
+						</div>
+					</a>
+				</div>
+				<div class="clearfix visible-sm-block"></div>
+			{{ end }}
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>{{ .Site.Params.collaborators.footertext | markdownify }}</p>
+				</div>
+			</div>
+		</div>
+	</section>

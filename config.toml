@@ -137,19 +137,18 @@ canonifyURLs = true
       img = "agreements-network-diagram-05.png"
       alt = "Corporate Governance"
 
-    # [[params.usecases.item]]
-    #   title = "Legal Template Producers"
-    #   subtitle = "Making money building better legal operations"
-    #   description = "<p>Active Agreements create a new method for legal services professionals to serve existing clients while building additional revenue streams and smarter networked operations.</p><p>Using Active Agreements, lawyers can create legally-effective smart contracts to serve their clients better and make more money. The Agreements Network contains the building blocks of automated legal operations. Using the Agreements Network, lawyers can assemble legal prose and workflow “Archetypes” that create, formalize, store and prove client contract rights.</p>"
-    #   img = "agreements-network-diagram-05.png"
-    #   alt = "Legal Template Producers"
-
-
   # FAQ section
   [params.faq]
     enable = true
     title = "FAQ"
     # NOTE: FAQ information is pulled from data/faq.toml
+
+  # Involved in section
+  [params.collaborators]
+    enable = true
+    title = "Collaborators"
+    description = "Working together to launch the Agreements Network are..."
+    footertext = "These companies are not in a formal legal relationship of any kind."
 
   # Contact section
   [params.contact]
@@ -176,4 +175,4 @@ canonifyURLs = true
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; The Agreements Network Founders 2018. All Rights Reserved.'
+    copyright = '&copy; The Agreements Network Authors 2018. All Rights Reserved.'

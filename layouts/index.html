@@ -11,7 +11,7 @@
         {{ partial "nav.html" .}}
 
 		{{ partial "hero.html" .}}
-		
+
         {{ partial "intro.html" .}}
 
         {{ if .Site.Params.overview.enable }}
@@ -30,11 +30,11 @@
             {{ partial "faq.html" .}}
         {{ end }}
 
-		{{ if .Site.Params.work.enable }}
-       		{{ partial "work.html" .}}
+		{{ if .Site.Params.collaborators.enable }}
+       		{{ partial "collaborators.html" .}}
        	{{ end }}
 
-		{{ if .Site.Params.testimonials.enable }}
+<!-- 		{{ if .Site.Params.testimonials.enable }}
         	{{ partial "testimonials.html" .}}
 		{{ end }}
 
@@ -48,7 +48,7 @@
 
 		{{ if .Site.Params.counters.enable }}
         	{{ partial "counters.html" .}}
-        {{ end }}
+        {{ end }} -->
 
 		{{ if .Site.Params.contact.enable }}
         	{{ partial "contact.html" .}}
