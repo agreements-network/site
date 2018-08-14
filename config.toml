@@ -6,7 +6,6 @@ theme = "elate"
 canonifyURLs = true
 
 [params]
-
   custom_css = ["css/custom.css"]
 
   # Meta
@@ -159,6 +158,11 @@ canonifyURLs = true
       title = "Anthemis"
       link = "https://www.anthemis.com"
       img = "anthemis.jpg"
+
+    [[params.collaborators.row]]
+      title = "Erdos IP Law"
+      link = "https://www.erdosiplaw.com"
+      img = "erdos.jpg"
 
     [[params.collaborators.row]]
       title = "LegalBono"
