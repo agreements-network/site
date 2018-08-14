@@ -152,6 +152,7 @@ canonifyURLs = true
 
     [[params.collaborators.row]]
       title = "Monax"
+      link = "https://monax.io"
       img = "monax.png"
 
   # Contact section
