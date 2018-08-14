@@ -53,8 +53,10 @@ jobs:
           name: Merge to master
           command: |
             git clone git@github.com:agreements-network/site build-base
-            cp -r build/* build-base
             cd build-base
+            git checkout master
+            git pull origin master
+            cp -r ../build/* .
             git add -A :/
             git commit -m "Automatic document generation: $CIRCLE_SHA1 [ci skip]" || true
             git push origin master
