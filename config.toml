@@ -166,6 +166,11 @@ canonifyURLs = true
       img = "legalbono.jpg"
 
     [[params.collaborators.row]]
+      title = "LexPredict"
+      link = "https://www.lexpredict.com"
+      img = "lexpredict.jpg"
+
+    [[params.collaborators.row]]
       title = "Monax"
       link = "https://monax.io"
       img = "monax.png"
