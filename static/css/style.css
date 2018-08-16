@@ -948,6 +948,13 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   margin: auto;
 }
+#fh5co-collaborators .fh5co-text h2 {
+  color: #929292;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
 #fh5co-collaborators .fh5co-project-item .fh5co-text {
   padding: 10px 20px;
 }

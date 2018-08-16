@@ -15,15 +15,13 @@
 			<div class="row row-bottom-padded-sm">
 			{{ range .Site.Params.collaborators.row }}
 				<div class="col-md-3 col-sm-4 col-xs-6">
-					<a href="images/collaborators/{{ .img }}" class="fh5co-project-item image-popup">
+					<a href="{{ .link }}" target="_blank" class="fh5co-project-item">
 						<img src="images/collaborators/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
 					</a>
-					<a href="{{ .link }}" target="_blank">
-						<div class="fh5co-text text-center">
+					<div class="fh5co-text text-center">
 						<h2>{{ .title }}</h2>
 						<span>{{ .subtitle }}</span>
-						</div>
-					</a>
+					</div>
 				</div>
 				<div class="clearfix visible-sm-block"></div>
 			{{ end }}
