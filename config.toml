@@ -175,6 +175,11 @@ canonifyURLs = true
       img = "lexpredict.jpg"
 
     [[params.collaborators.row]]
+      title = "Libra"
+      link = "https://www.libra.tech"
+      img = "libra.jpg"
+
+    [[params.collaborators.row]]
       title = "Monax"
       link = "https://monax.io"
       img = "monax.png"
