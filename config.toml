@@ -183,7 +183,12 @@ canonifyURLs = true
       title = "Partech"
       link = "https://partechpartners.com"
       img = "partech.jpg"
-
+      
+    [[params.collaborators.row]]
+      title = "Rymedi"
+      link = "https://www.rymedi.com"
+      img = "rymedi.jpg"
+      
   # Contact section
   [params.contact]
     enable = true
