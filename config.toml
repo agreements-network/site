@@ -162,7 +162,7 @@ canonifyURLs = true
     [[params.collaborators.row]]
       title = "BakerHostetler"
       link = "https://www.bakerlaw.com"
-      img = "baker.jpg"
+      img = "baker.PNG"
 
     [[params.collaborators.row]]
       title = "Erdos IP Law"
