@@ -158,11 +158,11 @@ canonifyURLs = true
       title = "Anthemis"
       link = "https://www.anthemis.com"
       img = "anthemis.jpg"
-      
+
     [[params.collaborators.row]]
       title = "BakerHostetler"
       link = "https://www.bakerlaw.com"
-      img = "baker.PNG"
+      img = "baker.png"
 
     [[params.collaborators.row]]
       title = "Erdos IP Law"
