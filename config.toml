@@ -185,6 +185,11 @@ canonifyURLs = true
       img = "libra.jpg"
 
     [[params.collaborators.row]]
+      title = "Mattereum"
+      link = "https://www.mattereum.com"
+      img = "mattereum.jpg"
+
+    [[params.collaborators.row]]
       title = "Monax"
       link = "https://monax.io"
       img = "monax.png"
