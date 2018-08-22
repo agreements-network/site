@@ -165,6 +165,11 @@ canonifyURLs = true
       img = "baker.png"
 
     [[params.collaborators.row]]
+      title = "Clause"
+      link = "http://clause.io"
+      img = "clause.jpg"
+
+    [[params.collaborators.row]]
       title = "Erdos IP Law"
       link = "https://www.erdosiplaw.com"
       img = "erdos.jpg"
