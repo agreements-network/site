@@ -34,7 +34,7 @@ canonifyURLs = true
   # Hero section
   [params.hero]
     title = "The Agreements Network"
-    subtitle = "Introducing a decentralized contract management platform that uses smart contract technology to create, prove and operate legal agreements.<br><span class='white'>It's the legal layer for a networked world.</span>"
+    subtitle = "An open ecosystem to create, distribute, and operate legal agreements.<br><span class='white'>It's the legal layer for a networked world.</span>"
     textureimg = "agreements-network-texture.png"
 
   [params.hero.video]
