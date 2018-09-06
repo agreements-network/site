@@ -206,8 +206,8 @@ canonifyURLs = true
       
     [[params.collaborators.row]]
       title = "Rymedi"
-      link = "https://www.rymedi.com"
-      img = "rymedi.jpg"
+      link = "http://www.rymedi.com"
+      img = "rymedi.png"
       
     [[params.collaborators.row]]
       title = "Wolfram Blockchain Labs"
