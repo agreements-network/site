@@ -189,6 +189,11 @@ canonifyURLs = true
       link = "https://www.rymedi.com"
       img = "rymedi.jpg"
       
+    [[params.collaborators.row]]
+      title = "Wolfram Blockchain Labs"
+      link = "https://www.wolframblockchainlabs.com"
+      img = "wolfram.jpg"
+      
   # Contact section
   [params.contact]
     enable = true
