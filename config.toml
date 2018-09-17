@@ -203,17 +203,22 @@ canonifyURLs = true
       title = "Partech"
       link = "https://partechpartners.com"
       img = "partech.jpg"
-      
+
     [[params.collaborators.row]]
       title = "Rymedi"
       link = "http://www.rymedi.com"
       img = "rymedi.png"
-      
+
     [[params.collaborators.row]]
       title = "Wolfram Blockchain Labs"
       link = "https://www.wolframblockchainlabs.com"
       img = "wolfram.jpg"
-      
+
+    [[params.collaborators.row]]
+      title = "Transparent Node"
+      link = "https://transparentnode.com"
+      img = "transparent_node.png"
+
   # Contact section
   [params.contact]
     enable = true
