@@ -25,12 +25,6 @@ canonifyURLs = true
     faq = "FAQ"
     contact = "Contact"
 
-    # postpended links
-    [[menu.postpend]]
-     url = "https://docs.agreements.network/"
-     name = "Docs"
-     weight = 10
-
   # Hero section
   [params.hero]
     title = "The Agreements Network"
@@ -231,8 +225,7 @@ canonifyURLs = true
 
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-envelope", "<a href='https://lists.agreements.network' alt='https://lists.agreements.network'>mailing lists</a>"],
-        ["icon-speech", "<a href='https://t.me/Agreements_Network' target='_blank'>telegram</a>"],
+        ["icon-envelope", "<a href='https://lists.agreements.network' alt='https://lists.agreements.network'>mailing lists</a>"]
       ]
 
     # Form labels
